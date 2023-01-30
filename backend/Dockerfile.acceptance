@@ -2,7 +2,7 @@
 ARG PLONE_VERSION=6.0.0.2
 FROM plone/plone-backend:${PLONE_VERSION}
 
-LABEL maintainer="Brian Davis <none>" \
+LABEL maintainer="Brian Davis <info@happybaseball.com>" \
       org.label-schema.name="plone-happy-site-acceptance" \
       org.label-schema.description="Plone Happy Site backend acceptance image." \
       org.label-schema.vendor="Brian Davis"

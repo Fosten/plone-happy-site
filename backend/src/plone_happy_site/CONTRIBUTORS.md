@@ -1,3 +1,3 @@
 # Contributors
 
-- fosten [none]
+- fosten [info@happybaseball.com]

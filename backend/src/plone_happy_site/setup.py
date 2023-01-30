@@ -30,7 +30,7 @@ setup(
     ],
     keywords="Python Plone CMS",
     author="Brian Davis",
-    author_email="none",
+    author_email="info@happybaseball.com",
     url="https://github.com/fosten/plone-happy-site",
     project_urls={
         "PyPI": "https://pypi.python.org/pypi/plone_happy_site",

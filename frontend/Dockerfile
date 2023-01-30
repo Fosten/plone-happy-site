@@ -21,7 +21,7 @@ EOT
 
 FROM base
 
-LABEL maintainer="Brian Davis <none>" \
+LABEL maintainer="Brian Davis <info@happybaseball.com>" \
       org.label-schema.name="plone-happy-site-frontend" \
       org.label-schema.description="Plone Happy Site frontend image." \
       org.label-schema.vendor="Brian Davis"
