@@ -28,7 +28,8 @@
     "@eeacms/volto-accordion-block",
     "@kitconcept/volto-blocks-grid",
     "@kitconcept/volto-slider-block",
-    "@eeacms/volto-matomo"
+    "@eeacms/volto-matomo",
+    "@Fosten/volto-happy-theme"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
@@ -135,7 +136,8 @@
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-blocks-grid": "*",
     "@kitconcept/volto-slider-block": "*",
-    "@plone/volto": "16.9.0"
+    "@plone/volto": "16.9.0",
+    "@Fosten/volto-happy-theme": "Fosten/volto-happy-theme"
   },
   "devDependencies": {
     "@plone/scripts": "^2.1.5",
