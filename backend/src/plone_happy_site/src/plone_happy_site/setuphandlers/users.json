@@ -1,0 +1,19 @@
+{
+  "portal": [
+    {
+      "email": "none",
+      "properties": {
+        "fullname": "Plone Happy Site",
+        "location": "World"
+      },
+      "groups": [
+      ],
+      "roles": [
+        "Member"
+      ],
+      "username": "plone-happy-site"
+    }
+  ],
+    "team": [
+  ]
+}

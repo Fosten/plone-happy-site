@@ -1,0 +1,3 @@
+---
+hostname: 'plone-happy-site'
+fqdn: '{{ hostname }}.localhost'
