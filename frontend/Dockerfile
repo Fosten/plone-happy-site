@@ -16,8 +16,10 @@ RUN corepack enable
 USER node
 WORKDIR /build
 
-RUN mkdir -p src/addons
-RUN yarn install
+RUN <<EOT
+    mkdir -p src/addons
+    make install
+EOT
 
 COPY --chown=node . /build/
 RUN yarn build
