@@ -17,7 +17,7 @@ USER node
 WORKDIR /build
 RUN <<EOT
     yarn plugin import interactive-tools
-    make install
+    yarn install
     yarn build
 EOT
 
