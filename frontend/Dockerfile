@@ -2,12 +2,12 @@
 FROM node:16-slim as base
 FROM base as builder
 
-RUN <<EOF
+RUN <<EOT
     apt-get update
     buildDeps="python3 build-essential git ca-certificates"
     apt-get install -y --no-install-recommends $buildDeps
     rm -rf /var/lib/apt/lists/*
-EOF
+EOT
 
 COPY --chown=node . /build/
 RUN corepack enable
@@ -26,7 +26,7 @@ LABEL maintainer="Brian Davis <info@happybaseball.com>" \
       org.label-schema.description="Plone Happy Site frontend image." \
       org.label-schema.vendor="Brian Davis"
 
-RUN <<<EOT
+RUN <<EOT
     apt-get update
     buildDeps="busybox"
     apt-get install -y --no-install-recommends $buildDeps
