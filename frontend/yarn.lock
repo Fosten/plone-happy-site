@@ -11626,13 +11626,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend@workspace:."
   dependencies:
-    "@Fosten/volto-happy-theme": Fosten/volto-happy-theme
     "@eeacms/volto-accordion-block": "*"
     "@eeacms/volto-matomo": "*"
     "@kitconcept/volto-blocks-grid": "*"
     "@kitconcept/volto-slider-block": "*"
     "@plone/scripts": ^2.1.5
     "@plone/volto": 16.9.0
+    "@Fosten/volto-happy-theme": Fosten/volto-happy-theme
     "@storybook/addon-actions": ^6.3.0
     "@storybook/addon-controls": 6.3.0
     "@storybook/addon-essentials": ^6.3.0
