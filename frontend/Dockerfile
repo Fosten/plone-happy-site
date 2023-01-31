@@ -11,15 +11,22 @@ EOT
 
 COPY --chown=node . /build/
 
-RUN apk update && apk add --update git && rm -rf /var/cache/apk/*
-RUN corepack enable \
-    && corepack prepare yarn@stable --activate \
-    && yarn set version 3.1.1 \
-    && yarn plugin import interactive-tools \
-    && echo -e "nodeLinker: node-modules\n\n$(cat /app/.yarnrc.yml)" > /app/.yarnrc.yml \
-    && cat /app/.yarnrc.yml \
-    && printf "Switched to Yarn version: "; yarn --version \
-    && yarn install
+RUN <<EOT
+    apk update
+    apk add --update git
+    rm -rf /var/cache/apk/*
+EOT
+
+RUN <<EOT
+    corepack enable
+    corepack prepare yarn@stable --activate
+    yarn set version 3.2.3
+    yarn plugin import interactive-tools
+    echo -e "nodeLinker: node-modules\n\n$(cat /app/.yarnrc.yml)" > /app/.yarnrc.yml
+    cat /app/.yarnrc.yml
+    printf "Switched to Yarn version: "; yarn --version
+    yarn install
+EOT
 
 USER node
 WORKDIR /build
