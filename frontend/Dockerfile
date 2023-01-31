@@ -11,20 +11,12 @@ EOT
 
 COPY --chown=node . /build/
 
-RUN <<EOT
-    corepack enable
-    corepack prepare yarn@stable --activate
-    yarn set version 3.2.3
-    yarn plugin import interactive-tools
-    echo -e "nodeLinker: node-modules\n\n$(cat /build/.yarnrc.yml)" > /build/.yarnrc.yml
-    cat /build/.yarnrc.yml
-    printf "Switched to Yarn version: "; yarn --version
-    yarn install
-EOT
+RUN corepack enable
 
 USER node
 WORKDIR /build
 RUN <<EOT
+    yarn plugin import interactive-tools
     make install
     yarn build
 EOT
