@@ -2,7 +2,6 @@
 FROM node:16-slim as base
 FROM base as builder
 COPY .yarnrc.yml ./
-COPY .yarn ./.yarn
 
 RUN <<EOT
     apt-get update
