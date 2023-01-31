@@ -51,7 +51,7 @@ format: format-prettier format-stylelint format-lint ## Format the codebase acco
 install: ## Install the frontend
 	$(MAKE) omelette
 	$(MAKE) preinstall
-	yarn install
+	yarn install --network-timeout 1000000
 
 .PHONY: preinstall
 preinstall: ## Preinstall task, checks if missdev (mrs-developer) is present and runs it
