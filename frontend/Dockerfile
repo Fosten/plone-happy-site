@@ -16,8 +16,7 @@ RUN corepack enable
 USER node
 WORKDIR /build
 RUN <<EOT
-    yarn plugin import interactive-tools
-    yarn install
+    make install
     yarn build
 EOT
 
