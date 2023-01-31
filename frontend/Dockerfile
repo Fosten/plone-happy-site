@@ -9,10 +9,17 @@ RUN <<EOT
     rm -rf /var/lib/apt/lists/*
 EOT
 
-COPY --chown=node .yarnrc.yml Makefile package.json mrs.developer.json jsconfig.json yarn.lock /build/
-COPY --chown=node .yarn /build/.yarn
 COPY --chown=node . /build/
-RUN corepack enable
+
+RUN apk update && apk add --update git && rm -rf /var/cache/apk/*
+RUN corepack enable \
+    && corepack prepare yarn@stable --activate \
+    && yarn set version 3.1.1 \
+    && yarn plugin import interactive-tools \
+    && echo -e "nodeLinker: node-modules\n\n$(cat /app/.yarnrc.yml)" > /app/.yarnrc.yml \
+    && cat /app/.yarnrc.yml \
+    && printf "Switched to Yarn version: "; yarn --version \
+    && yarn install
 
 USER node
 WORKDIR /build
