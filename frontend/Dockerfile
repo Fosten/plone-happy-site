@@ -2,12 +2,12 @@
 FROM node:16-slim as base
 FROM base as builder
 
-RUN <<EOT
+RUN <<EOF
     apt-get update
     buildDeps="python3 build-essential git ca-certificates"
     apt-get install -y --no-install-recommends $buildDeps
     rm -rf /var/lib/apt/lists/*
-EOT
+EOF
 
 COPY --chown=node . /build/
 RUN corepack enable
