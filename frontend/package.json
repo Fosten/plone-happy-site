@@ -132,12 +132,12 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
+    "@Fosten/volto-happy-theme": "Fosten/volto-happy-theme",
     "@eeacms/volto-accordion-block": "*",
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-blocks-grid": "*",
     "@kitconcept/volto-slider-block": "*",
-    "@plone/volto": "16.9.0",
-    "@Fosten/volto-happy-theme": "Fosten/volto-happy-theme"
+    "@plone/volto": "16.9.0"
   },
   "devDependencies": {
     "@plone/scripts": "^2.1.5",
