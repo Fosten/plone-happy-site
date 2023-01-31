@@ -9,8 +9,7 @@ RUN <<EOT
     rm -rf /var/lib/apt/lists/*
 EOT
 
-COPY --chown=node .yarnrc.yml Makefile package.json mrs.developer.json jsconfig.json yarn.lock /build/
-COPY --chown=node .yarn /build/.yarn
+COPY --chown=node . /build/
 
 RUN corepack enable
 USER node
@@ -21,7 +20,6 @@ RUN <<EOT
     make install
 EOT
 
-COPY --chown=node . /build/
 RUN yarn build
 
 FROM base
