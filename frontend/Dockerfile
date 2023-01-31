@@ -11,17 +11,15 @@ EOT
 
 COPY --chown=node .yarnrc.yml Makefile package.json mrs.developer.json jsconfig.json yarn.lock /build/
 COPY --chown=node .yarn /build/.yarn
+COPY --chown=node . /build/
 RUN corepack enable
+
 USER node
 WORKDIR /build
-
 RUN <<EOT
-    mkdir -p src/addons
     make install
+    yarn build
 EOT
-
-COPY --chown=node . /build/
-RUN yarn build
 
 FROM base
 
