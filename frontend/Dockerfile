@@ -16,6 +16,7 @@ USER node
 WORKDIR /build
 
 RUN <<EOT
+    cd /build
     mkdir -p src/addons
     make install
 EOT
