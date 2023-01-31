@@ -12,12 +12,6 @@ EOT
 COPY --chown=node . /build/
 
 RUN <<EOT
-    apk update
-    apk add --update git
-    rm -rf /var/cache/apk/*
-EOT
-
-RUN <<EOT
     corepack enable
     corepack prepare yarn@stable --activate
     yarn set version 3.2.3
