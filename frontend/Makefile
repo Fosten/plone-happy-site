@@ -49,7 +49,6 @@ format: format-prettier format-stylelint format-lint ## Format the codebase acco
 
 .PHONY: install
 install: ## Install the frontend
-	@echo "Install frontend"
 	$(MAKE) omelette
 	$(MAKE) preinstall
 	yarn install
