@@ -22,8 +22,8 @@ RUN <<EOT
     corepack prepare yarn@stable --activate
     yarn set version 3.2.3
     yarn plugin import interactive-tools
-    echo -e "nodeLinker: node-modules\n\n$(cat /app/.yarnrc.yml)" > /app/.yarnrc.yml
-    cat /app/.yarnrc.yml
+    echo -e "nodeLinker: node-modules\n\n$(cat /build/.yarnrc.yml)" > /build/.yarnrc.yml
+    cat /build/.yarnrc.yml
     printf "Switched to Yarn version: "; yarn --version
     yarn install
 EOT
