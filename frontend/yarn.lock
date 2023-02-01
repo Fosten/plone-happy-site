@@ -7,16 +7,13 @@ __metadata:
 
 "@Fosten/volto-happy-theme@Fosten/volto-happy-theme":
   version: 0.1.0
-  resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=60aa215887311c48ecc6b29c394691b7fdfec22c"
+  resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=59919065a367b234b3638b25b1367ca21cdc7744"
   dependencies:
     "@eeacms/volto-columns-block": "*"
-    "@kitconcept/volto-blocks-grid": "*"
     "@plone/scripts": "*"
-    react-slick: "*"
-    slick-carousel: "*"
     volto-form-block: "*"
     volto-subblocks: ^2.0.0
-  checksum: d24b586252eea2b3e7018e6cdd636f5edc6e1f0c4a90b3d9bcb1281c0dbdaa231d7e17fb06acb1102b391120af647aeba89694b963a3f18d680437e7cfad9d19
+  checksum: 6ab2180ad6ca962a3d56bf6111f3e6620e594ceff502579ec9f0dd34a266a957fa9c464b8ee6f6944efb88064db7e597dc9d018e0fc636554c191181ef0e7e73
   languageName: node
   linkType: hard
 
@@ -19867,7 +19864,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-slick@npm:*, react-slick@npm:0.29.0":
+"react-slick@npm:0.29.0":
   version: 0.29.0
   resolution: "react-slick@npm:0.29.0"
   dependencies:
@@ -21534,7 +21531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slick-carousel@npm:*, slick-carousel@npm:1.8.1":
+"slick-carousel@npm:1.8.1":
   version: 1.8.1
   resolution: "slick-carousel@npm:1.8.1"
   peerDependencies:
