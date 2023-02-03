@@ -7,13 +7,13 @@ __metadata:
 
 "@Fosten/volto-happy-theme@Fosten/volto-happy-theme":
   version: 0.1.0
-  resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=59919065a367b234b3638b25b1367ca21cdc7744"
+  resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=ab25699ced78977c1e465a834bab80e40eeabeed"
   dependencies:
     "@eeacms/volto-columns-block": "*"
     "@plone/scripts": "*"
     volto-form-block: "*"
     volto-subblocks: ^2.0.0
-  checksum: 6ab2180ad6ca962a3d56bf6111f3e6620e594ceff502579ec9f0dd34a266a957fa9c464b8ee6f6944efb88064db7e597dc9d018e0fc636554c191181ef0e7e73
+  checksum: 5ecc3168df9997dc1f8e100f40b17af83a29baa2ed393466de3a8f55640652782d5e1500ad519a13bc80c5f4ebc98fa9c389027272c97b33c4a448e86677c273
   languageName: node
   linkType: hard
 
