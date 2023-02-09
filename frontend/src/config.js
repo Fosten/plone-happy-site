@@ -22,11 +22,8 @@ export default function applyConfig(config) {
     isMultilingual: false,
     supportedLanguages: ['en'],
     defaultLanguage: 'en',
-    matomoSiteId: '3',
-    matomoUrlBase: 'http://happybaseball.com:9000/',
-    appExtras: [
-      ...config.settings.appExtras,
-    ]
+    matomoSiteId: '1',
+    matomoUrlBase: 'https://stats.happybaseball.com/',
   };
   return config;
 }
