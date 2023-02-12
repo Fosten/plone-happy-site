@@ -7,13 +7,14 @@ __metadata:
 
 "@Fosten/volto-happy-theme@Fosten/volto-happy-theme":
   version: 0.1.0
-  resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=58429d47f09972590f2cb677f7e7c404d49f45e3"
+  resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=8239085ad96cf5467ed6e63a4782858a2a1a1e01"
   dependencies:
     "@eeacms/volto-columns-block": "*"
+    "@eeacms/volto-metadata-block": "*"
     "@plone/scripts": "*"
     volto-form-block: "*"
     volto-subblocks: ^2.0.0
-  checksum: e108379ea0de6a0015962a2323508a611ce0055cea48f3c351b38d4305447a5593c4ca03001c6e582a043b6165cc39698db3cdc6012f874687b1e38293ef4e1e
+  checksum: a4d7b3bad5d484904b650b739e0bdca39112d9c4d667fe9899856460ce684923ceba11ca0c90f69af3736dcb8e9657b7124b45fe155822761fbf14157d6f171e
   languageName: node
   linkType: hard
 
@@ -1781,6 +1782,22 @@ __metadata:
   dependencies:
     "@datapunt/matomo-tracker-react": 0.3.1
   checksum: bdb771de6423a300d719d1c8994ec9dd651b2f93da5f01720cac4c9fe46f9eca97540e19ab9323a7fac2fecdee9605b8b35cd8225e5c4f47f92fdcd5c3368c41
+  languageName: node
+  linkType: hard
+
+"@eeacms/volto-metadata-block@npm:*":
+  version: 5.0.1
+  resolution: "@eeacms/volto-metadata-block@npm:5.0.1"
+  dependencies:
+    "@eeacms/volto-widgets-view": "*"
+  checksum: 3cfe2c759e168b76c63009a2e21bafeb60cf6d801c3a910a83a85f3076e4b1146df4b036426928d962a539d47ad75126b1142d05af6c2c68b202b39d108aff1d
+  languageName: node
+  linkType: hard
+
+"@eeacms/volto-widgets-view@npm:*":
+  version: 4.0.1
+  resolution: "@eeacms/volto-widgets-view@npm:4.0.1"
+  checksum: 0bec6c78eebfc6af6f2ebfe7913f08d72dced254d39abebaf591d7714baeb0622cd416462724d553fd275da008a9c3d248bb5c141baa3cdd24572b4f6250cdb9
   languageName: node
   linkType: hard
 
