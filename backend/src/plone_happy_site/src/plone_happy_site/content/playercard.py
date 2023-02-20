@@ -56,6 +56,7 @@ class IPlayerCard(model.Schema):
         required=True,
     )
 
+
 @implementer(IPlayerCard)
 class PlayerCard(Container):
     """PlayerCard instance class"""
