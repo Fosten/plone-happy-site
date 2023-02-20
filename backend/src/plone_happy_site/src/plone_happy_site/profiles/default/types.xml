@@ -7,4 +7,5 @@
           name="MyType"
   />
 -->
+  <object name="playercard" meta_type="Dexterity FTI"/>
 </object>

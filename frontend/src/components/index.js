@@ -8,3 +8,6 @@
  *   Footer,
  * };
  */
+import PlayerCardView from './Views/PlayerCard';
+
+export { PlayerCardView };

@@ -15,6 +15,7 @@
 
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
+import { PlayerCardView } from './components';
 
 export default function applyConfig(config) {
   config.settings = {
@@ -24,6 +25,13 @@ export default function applyConfig(config) {
     defaultLanguage: 'en_US',
     matomoSiteId: '1',
     matomoUrlBase: 'https://stats.happybaseball.com/',
+  };
+  config.views = {
+    ...config.views,
+    contentTypesViews: {
+      ...config.views.contentTypesViews,
+      playercard: PlayerCardView,
+    },
   };
   return config;
 }
