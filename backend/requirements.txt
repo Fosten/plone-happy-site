@@ -6,3 +6,5 @@ zope.testrunner
 # Add required add-ons
 # (Ideally add them in setup.py for plone_happy_site)
 # collective.easyform
+
+plone-baseball
