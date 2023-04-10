@@ -133,8 +133,8 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@Fosten/volto-happy-theme": "Fosten/volto-happy-theme",
     "@Fosten/volto-baseball": "Fosten/volto-baseball",
+    "@Fosten/volto-happy-theme": "Fosten/volto-happy-theme",
     "@eeacms/volto-accordion-block": "*",
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-blocks-grid": "*",
