@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@Fosten/volto-baseball@Fosten/volto-baseball":
+  version: 0.1.0
+  resolution: "@Fosten/volto-baseball@https://github.com/Fosten/volto-baseball.git#commit=dc1093c19346b13bd35c07f2d61db215360b3c83"
+  dependencies:
+    "@asbeane/mlb-stats-api": "asbeane/mlb-stats-api#fd694b8cc32b82ba6fa8b9e024954ac4b85cb60b"
+  checksum: 621da842ac551fd530bb2b51f63216b8efc76ed5910ec998cdd5ef439f5835cb50d38d4fcf07df5f091d794c7474998a4bb853fc080869012ea378e8214d6c20
+  languageName: node
+  linkType: hard
+
 "@Fosten/volto-happy-theme@Fosten/volto-happy-theme":
   version: 0.1.0
   resolution: "@Fosten/volto-happy-theme@https://github.com/Fosten/volto-happy-theme.git#commit=11066e9bdc402a906e396b90fa890f74675f24ef"
@@ -25,6 +34,15 @@ __metadata:
     "@jridgewell/gen-mapping": ^0.1.0
     "@jridgewell/trace-mapping": ^0.3.9
   checksum: d74d170d06468913921d72430259424b7e4c826b5a7d39ff839a29d547efb97dc577caa8ba3fb5cf023624e9af9d09651afc3d4112a45e2050328abc9b3a2292
+  languageName: node
+  linkType: hard
+
+"@asbeane/mlb-stats-api@asbeane/mlb-stats-api#fd694b8cc32b82ba6fa8b9e024954ac4b85cb60b":
+  version: 1.7.0
+  resolution: "@asbeane/mlb-stats-api@https://github.com/asbeane/mlb-stats-api.git#commit=fd694b8cc32b82ba6fa8b9e024954ac4b85cb60b"
+  dependencies:
+    axios: ^0.21.1
+  checksum: d7b67d0fda052cd308227f407467d394c7003e5bf6bd0d3ff97b9bb25bd32759652d336ca9e33d8099f54de6775fceb5ae1700bc4c7222bdccb9fe1ba4252d60
   languageName: node
   linkType: hard
 
@@ -11650,6 +11668,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend@workspace:."
   dependencies:
+    "@Fosten/volto-baseball": Fosten/volto-baseball
     "@Fosten/volto-happy-theme": Fosten/volto-happy-theme
     "@eeacms/volto-accordion-block": "*"
     "@eeacms/volto-matomo": "*"
