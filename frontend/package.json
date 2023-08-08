@@ -31,7 +31,6 @@
   },
   "addons": [
     "@eeacms/volto-accordion-block",
-    "@kitconcept/volto-blocks-grid",
     "@kitconcept/volto-slider-block",
     "@eeacms/volto-matomo",
     "@Fosten/volto-happy-theme",
@@ -135,14 +134,13 @@
     "not dead"
   ],
   "engines": {
-    "node": "^14 || ^16"
+    "node": "^16 || ^18"
   },
   "dependencies": {
     "@eeacms/volto-accordion-block": "*",
     "@eeacms/volto-matomo": "*",
-    "@kitconcept/volto-blocks-grid": "*",
     "@kitconcept/volto-slider-block": "*",
-    "@plone/volto": "16.9.0"
+    "@plone/volto": "17.0.0-alpha.23"
   },
   "devDependencies": {
     "@plone/scripts": "^2.1.5",
@@ -156,7 +154,7 @@
     "mrs-developer": "*",
     "postcss": "8.4.13",
     "prettier": "2.0.5",
-    "razzle": "4.2.17",
+    "razzle": "4.2.18",
     "stylelint": "14.0.1",
     "stylelint-config-idiomatic-order": "8.1.0",
     "stylelint-config-prettier": "8.0.1",

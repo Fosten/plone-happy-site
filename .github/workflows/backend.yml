@@ -65,7 +65,7 @@ jobs:
         python:
           - 3.11
         plone:
-          - "6.0.0.2"
+          - "6.0.6"
 
     defaults:
       run:
