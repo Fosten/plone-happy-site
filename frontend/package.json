@@ -3,6 +3,11 @@
   "description": "Plone 6 website for Happy Baseball",
   "license": "MIT",
   "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "src/addons/volto-happy-theme",
+    "src/addons/volto-baseball"
+  ],
   "scripts": {
     "start": "razzle start",
     "postinstall": "make omelette && make patches",
@@ -133,8 +138,6 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@Fosten/volto-baseball": "Fosten/volto-baseball",
-    "@Fosten/volto-happy-theme": "Fosten/volto-happy-theme",
     "@eeacms/volto-accordion-block": "*",
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-blocks-grid": "*",

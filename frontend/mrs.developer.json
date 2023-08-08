@@ -1,1 +1,14 @@
-{}
+{
+    "volto-happy-theme": {
+        "url": "https://github.com/Fosten/volto-happy-theme.git",
+        "path": "src",
+        "package": "@Fosten/volto-happy-theme",
+        "branch": "main"
+    },
+    "volto-baseball": {
+        "url": "https://github.com/Fosten/volto-baseball.git",
+        "path": "src",
+        "package": "@Fosten/volto-baseball",
+        "branch": "main"
+    }
+}
