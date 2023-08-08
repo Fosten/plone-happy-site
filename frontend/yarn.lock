@@ -1787,11 +1787,11 @@ __metadata:
   linkType: hard
 
 "@eeacms/volto-columns-block@npm:*":
-  version: 5.2.0
-  resolution: "@eeacms/volto-columns-block@npm:5.2.0"
+  version: 6.3.2
+  resolution: "@eeacms/volto-columns-block@npm:6.3.2"
   dependencies:
     react-color: ~2.19.3
-  checksum: 1e67b04b37f6224b7f3fe02681ec1af1678ac591bdb5fc9774bc1b88376c94664d938f23e8100871c8c8d765c370ced80ecfb8baabcbd2bdb6b01d975f708011
+  checksum: 7c2d5a9aa6502eade25ef24e8fdc0a4d896ddf2de8fedc33cf8c86fad5fb038fffa77f719e23b71adc97996eaa6d7ccbed0bcd28908cb53b7b1e386cac101c42
   languageName: node
   linkType: hard
 
