@@ -2,12 +2,12 @@ version: "3.3"
 services:
 
   frontend:
-    image: ghcr.io/fosten/plone-happy-site-frontend:latest
+    image: ghcr.io/fosten/plone-happy-site-frontend:${STACK_PARAM:-latest}
     networks:
       - traefik-public
       - traefik-happy
     environment:
-      RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
+      RAZZLE_INTERNAL_API_PATH: http://happybaseball-com_backend:8080/Plone
     ports:
       - "3002:3000"
     depends_on:
@@ -32,7 +32,7 @@ services:
         - traefik.http.routers.happy-frontend.middlewares=gzip
 
   backend:
-    image: ghcr.io/fosten/plone-happy-site-backend:latest
+    image: ghcr.io/fosten/plone-happy-site-backend:${STACK_PARAM:-latest}
     networks:
       - traefik-public
       - traefik-happy
