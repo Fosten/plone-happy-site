@@ -1,0 +1,97 @@
+version: "3.3"
+services:
+
+  frontend:
+    image: ghcr.io/fosten/plone-happy-site-frontend:${STACK_PARAM:-latest}
+    networks:
+      - traefik-public
+      - traefik-testing_happy
+    environment:
+      RAZZLE_INTERNAL_API_PATH: http://testing-happybaseball-com_backend:8080/Plone
+    ports:
+      - "3012:3000"
+    depends_on:
+      - backend
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == happyapp
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        # SERVICE
+        - traefik.http.services.testing_happy-frontend.loadbalancer.server.port=3000
+        # MIDDLEWARES
+        ### ClassicUI Access Authentication
+        - traefik.http.middlewares.testing_happy-frontend-auth.basicauth.users=testing:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.
+        # HOSTS: Main
+        - traefik.http.routers.testing_happy-frontend.rule=Host(`testing.happybaseball.com`)
+        - traefik.http.routers.testing_happy-frontend.entrypoints=websecure
+        - traefik.http.routers.testing_happy-frontend.tls=true
+        - traefik.http.routers.testing_happy-frontend.tls.certresolver=mydnschallenge
+        - traefik.http.routers.testing_happy-frontend.service=testing_happy-frontend
+        - traefik.http.routers.testing_happy-frontend.middlewares=gzip,testing_happy-frontend-auth
+
+  backend:
+    image: ghcr.io/fosten/plone-happy-site-backend:${STACK_PARAM:-latest}
+    networks:
+      - traefik-public
+      - traefik-testing_happy
+    environment:
+      RELSTORAGE_DSN: "dbname='${TESTING_DB_NAME:-plone}' user='${TESTING_DB_USER:-plone}' host='${DB_HOST:-db}' password='${DB_PASSWORD:-plone}'"
+    ports:
+      - "8092:8080"
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == happyapp
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        # SERVICE
+        - traefik.http.services.testing_happy-backend.loadbalancer.server.port=8080
+        # MIDDLEWARES
+        ### basic_auth Authentication ClassicUI & Zope
+        - traefik.http.middlewares.testing_happy-backend-auth.basicauth.users=admin:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.UpdwwHqB8gJNp8TQ4s4qDK8LxjfISl6
+        - traefik.http.middlewares.testing_happy-zope-auth.basicauth.users=admin:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.UpdwwHqB8gJNp8TQ4s4qDK8LxjfISl6
+        ### Backend ++api++ VHM
+        - "traefik.http.middlewares.testing_happy-vhm-cleanup.replacepathregex.regex=^/((\\+\\+api\\+\\+/){1,})($$|.*)"
+        - "traefik.http.middlewares.testing_happy-vhm-cleanup.replacepathregex.replacement=/VirtualHostBase/https/testing.happybaseball.com/Plone/++api++/VirtualHostRoot/$$3"
+        - "traefik.http.middlewares.testing_happy-vhm.replacepathregex.regex=^/\\+\\+api\\+\\+($$|/.*)"
+        - "traefik.http.middlewares.testing_happy-vhm.replacepathregex.replacement=/VirtualHostBase/https/testing.happybaseball.com/Plone/++api++/VirtualHostRoot/$$1"
+        ### Backend ClassicUI VHM
+        - "traefik.http.middlewares.testing_happy-vhm-classicui.replacepathregex.regex=^/ClassicUI($$|/.*)"
+        - "traefik.http.middlewares.testing_happy-vhm-classicui.replacepathregex.replacement=/VirtualHostBase/https/testing.happybaseball.com/Plone/VirtualHostRoot/_vh_ClassicUI/$$1"
+        ### Backend zopeadmin root path
+        - "traefik.http.middlewares.testing_happy-root-zopeadmin.replacepathregex.regex=^/zopeadmin($$|/.*)"
+        - "traefik.http.middlewares.testing_happy-root-zopeadmin.replacepathregex.replacement=/VirtualHostBase/https/testing.happybaseball.com/VirtualHostRoot/_vh_ClassicUI/manage_main/$$1"
+
+        # ROUTES
+        ## testing.happybaseball.com API
+        - traefik.http.routers.testing_happy-backend.rule=Host(`testing.happybaseball.com`) && (PathPrefix(`/++api++`))
+        - traefik.http.routers.testing_happy-backend.entrypoints=websecure
+        - traefik.http.routers.testing_happy-backend.tls=true
+        - traefik.http.routers.testing_happy-backend.service=testing_happy-backend
+        - traefik.http.routers.testing_happy-backend.middlewares=gzip,testing_happy-vhm-cleanup,testing_happy-vhm
+        ### testing.happybaseball.com /ClassicUI - protected with basic auth (prevent SEOs from crawl it)
+        - traefik.http.routers.testing_happy-classicui.rule=Host(`testing.happybaseball.com`) && (PathPrefix(`/ClassicUI`))
+        - traefik.http.routers.testing_happy-classicui.entrypoints=websecure
+        - traefik.http.routers.testing_happy-classicui.tls=true
+        - traefik.http.routers.testing_happy-classicui.service=testing_happy-backend
+        - traefik.http.routers.testing_happy-classicui.middlewares=gzip,testing_happy-backend-auth,testing_happy-vhm-classicui
+        ### testing.happybaseball.com /zope - protected with basic auth (prevent unauthorized acess)
+        - traefik.http.routers.testing_happy-zopeadmin.rule=Host(`testing.happybaseball.com`) && (PathPrefix(`/zopeadmin`))
+        - traefik.http.routers.testing_happy-zopeadmin.entrypoints=websecure
+        - traefik.http.routers.testing_happy-zopeadmin.tls=true
+        - traefik.http.routers.testing_happy-zopeadmin.service=testing_happy-backend
+        - traefik.http.routers.testing_happy-zopeadmin.middlewares=gzip,testing_happy-zope-auth,testing_happy-root-zopeadmin
+
+networks:
+  traefik-public:
+    external: true
+  traefik-testing_happy:
+    driver: overlay
