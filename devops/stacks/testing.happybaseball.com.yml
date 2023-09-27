@@ -25,7 +25,7 @@ services:
         - traefik.http.services.testing_happy-frontend.loadbalancer.server.port=3000
         # MIDDLEWARES
         ### ClassicUI Access Authentication
-        - traefik.http.middlewares.testing_happy-frontend-auth.basicauth.users=testing:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.
+        - traefik.http.middlewares.testing_happy-frontend-auth.basicauth.users=testing:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.UpdwwHqB8gJNp8TQ4s4qDK8LxjfISl6
         # HOSTS: Main
         - traefik.http.routers.testing_happy-frontend.rule=Host(`testing.happybaseball.com`)
         - traefik.http.routers.testing_happy-frontend.entrypoints=websecure
