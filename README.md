@@ -11,8 +11,8 @@ Plone 6 website for Happy Baseball
 
 ### Development Setup
 
-- Python 3.9
-- Node 16
+- Python 3.9, 3.10, 3.11, 3.12
+- Node 18
 - yarn
 - Docker
 
