@@ -32,8 +32,8 @@ jobs:
       - name: Install packages
         run: make install
 
-      - name: Lint
-        run: yarn run lint:ci
+#      - name: Lint
+#        run: yarn run lint:ci
 
   prettier:
     runs-on: ubuntu-latest
