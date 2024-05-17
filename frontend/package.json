@@ -6,7 +6,8 @@
   "private": true,
   "workspaces": [
     "src/addons/volto-happy-theme",
-    "src/addons/volto-baseball"
+    "src/addons/volto-baseball",
+    "src/addons/volto-fullcalendar-block"
   ],
   "scripts": {
     "start": "razzle start",
@@ -33,7 +34,7 @@
     "@eeacms/volto-accordion-block",
     "@kitconcept/volto-slider-block",
     "@eeacms/volto-matomo",
-    "@mbarde/volto-fullcalendar-block",
+    "@fosten/volto-fullcalendar-block",
     "@Fosten/volto-happy-theme",
     "@Fosten/volto-baseball"
   ],
@@ -143,7 +144,6 @@
     "@kitconcept/volto-slider-block": "*",
     "@loadable/component": "5.14.1",
     "@loadable/server": "5.14.0",
-    "@mbarde/volto-fullcalendar-block": "^0.7.0",
     "@plone/scripts": "^3.6.1",
     "@plone/volto": "18.0.0-alpha.29",
     "@redux-devtools/extension": "^3.3.0",

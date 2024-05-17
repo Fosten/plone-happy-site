@@ -10,5 +10,11 @@
         "path": "src",
         "package": "@Fosten/volto-baseball",
         "branch": "main"
+    },
+    "volto-fullcalendar-block": {
+        "url": "https://github.com/fosten/volto-fullcalendar-block.git",
+        "path": "src",
+        "package": "@fosten/volto-fullcalendar-block",
+        "branch": "google-calendar"
     }
 }

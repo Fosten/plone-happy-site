@@ -30,6 +30,9 @@
             ],
             "@Fosten/volto-baseball": [
                 "addons/volto-baseball/src"
+            ],
+            "@fosten/volto-fullcalendar-block": [
+                "addons/volto-fullcalendar-block/src"
             ]
         },
         "baseUrl": "src"
