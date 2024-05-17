@@ -10,4 +10,10 @@
   <!-- Metadata
   <column value="industry" />
 -->
+  <index meta_type="FieldIndex"
+         name="recurrence"
+  >
+    <indexed_attr value="recurrence" />
+  </index>
+  <column value="recurrence" />
 </object>

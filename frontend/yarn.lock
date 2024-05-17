@@ -2402,6 +2402,81 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fullcalendar/common@npm:~5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/common@npm:5.9.0"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: b53bd70badb233ee31f628e6c03cfe6ba5f4c4b563b008e5de4b81a5c8095385ba9d461a7b0a857afd6350c1bc40de6553050d7c217064f0dd1078b96343bd19
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/core@npm:5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/core@npm:5.9.0"
+  dependencies:
+    "@fullcalendar/common": ~5.9.0
+    preact: ^10.0.5
+    tslib: ^2.1.0
+  checksum: da187a1fe5fcf76725298b060fb688fccb94c7eb85ff1afae7699f82bcc2f0a0f1c88fc0ca0e01d47cc6d4436ba5a85103b0c718a29b9bbe6a5d2853776c5b13
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/daygrid@npm:5.9.0, @fullcalendar/daygrid@npm:~5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/daygrid@npm:5.9.0"
+  dependencies:
+    "@fullcalendar/common": ~5.9.0
+    tslib: ^2.1.0
+  checksum: 4f21cf44c90017d5b7f77211ead1585ff39ee5dd01d112a0c8bf6ffea9d072d4dfa4bbdd467beb8f4cfc9652f69d4847697604de6849b3fd2330093e16e15a37
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/icalendar@npm:5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/icalendar@npm:5.9.0"
+  dependencies:
+    "@fullcalendar/common": ~5.9.0
+    ical.js: ^1.4.0
+    tslib: ^2.1.0
+  checksum: f5b60aed521d77f86bdf276376751cd25ca75209962b10d73cd0ff243adae279c85f4deaff61b21bf934d8e60534b6f43718f1dd159535c7600173e58655f113
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/list@npm:5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/list@npm:5.9.0"
+  dependencies:
+    "@fullcalendar/common": ~5.9.0
+    tslib: ^2.1.0
+  checksum: f71a9ad0a42bebdd46dca0691e2f987596296e09521481f6b7a3c2fc5529b39d3466251830b735cd51748f46488a82ae309402533ae805f7b70159530060fbf9
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/react@npm:5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/react@npm:5.9.0"
+  dependencies:
+    "@fullcalendar/common": ~5.9.0
+    tslib: ^2.1.0
+  peerDependencies:
+    react: ^16.7.0 || ^17
+    react-dom: ^16.7.0 || ^17
+  checksum: d02b0af2b53186e03ff635f07e8c98edeb06af06d1c4a77c2205ad857ad8cc2c46dc083d0d38551f3f4001714c974484193c4d30db0cb33c67dadbdf83f24b99
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/timegrid@npm:5.9.0":
+  version: 5.9.0
+  resolution: "@fullcalendar/timegrid@npm:5.9.0"
+  dependencies:
+    "@fullcalendar/common": ~5.9.0
+    "@fullcalendar/daygrid": ~5.9.0
+    tslib: ^2.1.0
+  checksum: dedef1e1147cd17aa277b159c806e0f927715d67c513d940bec61cb97bfdf97c71b43c03166d8442e9683e2d7d6f03d81619a694de84e04e5995b9e8ef3585b9
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -2974,6 +3049,20 @@ __metadata:
   peerDependencies:
     webpack: ">=4.6.0"
   checksum: fee31c7f8c158c1cf987dee57e1a8e7b822decd004fd3c00895e30c6780584410d0199e44d10e7bf225ea30bed439404755272396d515d51a65f02e8e3ae1db0
+  languageName: node
+  linkType: hard
+
+"@mbarde/volto-fullcalendar-block@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@mbarde/volto-fullcalendar-block@npm:0.7.0"
+  dependencies:
+    "@fullcalendar/core": 5.9.0
+    "@fullcalendar/daygrid": 5.9.0
+    "@fullcalendar/icalendar": 5.9.0
+    "@fullcalendar/list": 5.9.0
+    "@fullcalendar/react": 5.9.0
+    "@fullcalendar/timegrid": 5.9.0
+  checksum: 6c6ff7884489c2690073372d47bed143a57e338e95751f06e9cdb5bff401238c2c02bd9375326bd6cfbe63ba0d6b0922eeb8ce3efa948c18ee809c427104c6ec
   languageName: node
   linkType: hard
 
@@ -11588,6 +11677,7 @@ __metadata:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
+    "@mbarde/volto-fullcalendar-block": ^0.7.0
     "@plone/scripts": ^3.6.1
     "@plone/types": 1.0.0-alpha.11
     "@plone/volto": 18.0.0-alpha.29
@@ -12994,6 +13084,13 @@ __metadata:
   version: 5.0.0
   resolution: "human-signals@npm:5.0.0"
   checksum: 6504560d5ed91444f16bea3bd9dfc66110a339442084e56c3e7fa7bbdf3f406426d6563d662bdce67064b165eac31eeabfc0857ed170aaa612cf14ec9f9a464c
+  languageName: node
+  linkType: hard
+
+"ical.js@npm:^1.4.0":
+  version: 1.5.0
+  resolution: "ical.js@npm:1.5.0"
+  checksum: 51df7a01f462dc8a02b3c3c28acb288756071044c4a8b56ff5179995bb219e569e72cfedac6f4ab03dc643be34f5d88c09a7d79c4be6ba8a7623b7336eecb110
   languageName: node
   linkType: hard
 
@@ -18181,6 +18278,13 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.2.0
   checksum: 649f9e60a763ca4b5a7bbec446a069edf07f057f6d780a5a0070576b841538d1ecf7dd888f2fbfd1f76200e26c969e405aeeae66332e6927dbdc8bdcb90b9451
+  languageName: node
+  linkType: hard
+
+"preact@npm:^10.0.5":
+  version: 10.22.0
+  resolution: "preact@npm:10.22.0"
+  checksum: 1b7493abec35d5042094d652e5cb980de00a0ef39e130b2f20485214d273ef0cebafa2000aa9fa4ef9dad952bd4e746ad3714f42206f34b817fd3712d0d70bcd
   languageName: node
   linkType: hard
 
