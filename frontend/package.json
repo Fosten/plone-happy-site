@@ -33,6 +33,7 @@
   "addons": [
     "@eeacms/volto-accordion-block",
     "@kitconcept/volto-slider-block",
+    "volto-form-block",
     "@eeacms/volto-matomo",
     "@fosten/volto-fullcalendar-block",
     "@Fosten/volto-happy-theme",
@@ -233,7 +234,9 @@
     "universal-cookie-express": "4.0.3",
     "url": "^0.11.3",
     "use-deep-compare-effect": "1.8.1",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "volto-form-block": "^3.8.3",
+    "volto-subblocks": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -249,7 +252,7 @@
     "@jest/globals": "^29.7.0",
     "@loadable/babel-plugin": "5.13.2",
     "@loadable/webpack-plugin": "5.15.2",
-    "@plone/types": "1.0.0-alpha.11",
+    "@plone/types": "1.0.0-alpha.13",
     "@sinonjs/fake-timers": "^6.0.1",
     "@storybook/addon-actions": "^8.0.4",
     "@storybook/addon-controls": "^8.0.4",
@@ -290,10 +293,10 @@
     "cypress-file-upload": "5.0.8",
     "deep-freeze": "0.0.1",
     "eslint": "^8.57.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-config-react-app": "7.0.1",
-    "eslint-import-resolver-alias": "1.1.2",
-    "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",

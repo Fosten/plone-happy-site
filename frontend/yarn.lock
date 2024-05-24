@@ -21,7 +21,6 @@ __metadata:
     "@eeacms/volto-columns-block": "*"
     "@eeacms/volto-metadata-block": "*"
     "@plone/scripts": "*"
-    volto-form-block: "*"
   languageName: unknown
   linkType: soft
 
@@ -3406,9 +3405,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/types@npm:1.0.0-alpha.11":
-  version: 1.0.0-alpha.11
-  resolution: "@plone/types@npm:1.0.0-alpha.11"
+"@plone/types@npm:1.0.0-alpha.13":
+  version: 1.0.0-alpha.13
+  resolution: "@plone/types@npm:1.0.0-alpha.13"
   peerDependencies:
     history: ^5.3.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -3417,7 +3416,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: e2625e6b04a8d645b77d17ffa2102207e8613e8d35a9111453054a415b7fa0b7f7e38217eff1f1898bdaa6e5d24911064112d9a395edf0b08f23645121162eab
+  checksum: 1e6fe525377b88df9206b520103f677ae91fc39448b47ce2d45efe7a4efb3340229d282a3c65d0014e43b78675665a90ba4bc9ca54338255ec83dd3d1c80edd1
   languageName: node
   linkType: hard
 
@@ -10412,7 +10411,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:9.1.0":
+"eslint-config-prettier@npm:^9.1.0":
   version: 9.1.0
   resolution: "eslint-config-prettier@npm:9.1.0"
   peerDependencies:
@@ -10423,7 +10422,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-react-app@npm:7.0.1":
+"eslint-config-react-app@npm:^7.0.1":
   version: 7.0.1
   resolution: "eslint-config-react-app@npm:7.0.1"
   dependencies:
@@ -10447,7 +10446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-alias@npm:1.1.2":
+"eslint-import-resolver-alias@npm:^1.1.2":
   version: 1.1.2
   resolution: "eslint-import-resolver-alias@npm:1.1.2"
   peerDependencies:
@@ -10456,7 +10455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-babel-plugin-root-import@npm:1.1.1":
+"eslint-import-resolver-babel-plugin-root-import@npm:^1.1.1":
   version: 1.1.1
   resolution: "eslint-import-resolver-babel-plugin-root-import@npm:1.1.1"
   dependencies:
@@ -11775,7 +11774,7 @@ __metadata:
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
     "@plone/scripts": ^3.6.1
-    "@plone/types": 1.0.0-alpha.11
+    "@plone/types": 1.0.0-alpha.13
     "@plone/volto": 18.0.0-alpha.32
     "@redux-devtools/extension": ^3.3.0
     "@sinonjs/fake-timers": ^6.0.1
@@ -11825,10 +11824,10 @@ __metadata:
     detect-browser: 5.1.0
     diff: 3.5.0
     eslint: ^8.57.0
-    eslint-config-prettier: 9.1.0
-    eslint-config-react-app: 7.0.1
-    eslint-import-resolver-alias: 1.1.2
-    eslint-import-resolver-babel-plugin-root-import: 1.1.1
+    eslint-config-prettier: ^9.1.0
+    eslint-config-react-app: ^7.0.1
+    eslint-import-resolver-alias: ^1.1.2
+    eslint-import-resolver-babel-plugin-root-import: ^1.1.1
     eslint-import-resolver-typescript: ^3.6.1
     eslint-plugin-import: ^2.29.1
     eslint-plugin-jsx-a11y: ^6.7.1
@@ -11960,6 +11959,8 @@ __metadata:
     use-deep-compare-effect: 1.8.1
     use-trace-update: 1.3.2
     uuid: ^8.3.2
+    volto-form-block: ^3.8.3
+    volto-subblocks: ^2.0.0
     wait-on: 6.0.0
     webpack: 5.90.1
     webpack-bundle-analyzer: 4.10.1
@@ -23756,9 +23757,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"volto-form-block@npm:*":
-  version: 3.8.2
-  resolution: "volto-form-block@npm:3.8.2"
+"volto-form-block@npm:^3.8.3":
+  version: 3.8.3
+  resolution: "volto-form-block@npm:3.8.3"
   dependencies:
     "@hcaptcha/react-hcaptcha": ^0.3.6
     file-saver: ^2.0.5
@@ -23767,7 +23768,7 @@ __metadata:
   peerDependencies:
     "@plone/volto": ">=16.0.0-alpha.38"
     volto-subblocks: ^2.0.0
-  checksum: 5b72a06a5ee81b3c5f6600cc57df0a190d95765d30bb9afcd09e6ca2215f605184327fa4a88b0e8ce4e410ff9e21b2351cb4340e5a9dcdf95d19f3fac9580573
+  checksum: 44b043f3eab2ef11c328b1b185ea9711a6e67344745708f5b9f293fcde75f6037e5cd5e9baee2ee0ce4a661a1ef752564d73da12e4b792a475bce6b4bc0a47b8
   languageName: node
   linkType: hard
 
