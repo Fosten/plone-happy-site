@@ -3360,9 +3360,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/registry@npm:1.5.6":
-  version: 1.5.6
-  resolution: "@plone/registry@npm:1.5.6"
+"@plone/registry@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@plone/registry@npm:1.5.7"
   dependencies:
     crypto-random-string: 3.2.0
     debug: 4.3.2
@@ -3374,7 +3374,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: fb6e86bec72bcc270209d6dc98c8d7ff456cb798a2e398bbe731514a24806a75dd854ba8dd021b4283e6187e9dae1dce54a4fadf83baf127373306962d9943ed
+  checksum: f356d25cc9f12f3f1acc83e1f8d3f84ba817a1b466739d6b50d035dfc9f69273cf72ea3ecb16dcd2eb9fc5f9c2902fc04af3214c00812a5b00d8c0b7cfa317f7
   languageName: node
   linkType: hard
 
@@ -3440,13 +3440,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:18.0.0-alpha.29":
-  version: 18.0.0-alpha.29
-  resolution: "@plone/volto@npm:18.0.0-alpha.29"
+"@plone/volto@npm:18.0.0-alpha.32":
+  version: 18.0.0-alpha.32
+  resolution: "@plone/volto@npm:18.0.0-alpha.32"
   dependencies:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
-    "@plone/registry": 1.5.6
+    "@plone/registry": 1.5.7
     "@plone/scripts": 3.6.1
     "@plone/volto-slate": 18.0.0-alpha.12
     "@redux-devtools/extension": ^3.3.0
@@ -3537,7 +3537,7 @@ __metadata:
     url: ^0.11.3
     use-deep-compare-effect: 1.8.1
     uuid: ^8.3.2
-  checksum: 0372d6a9074e339dc753c42be4ead13cba885b4c42a692dd1bec284c94c1afed983ccd30b5ee5302d27cad22ea1f7e0d126c2cdab88018c2c903a3f784bcd84d
+  checksum: dafca864f484ae2c310376fb647af1e3409518c71ce91d624d4746fd4eec6fdfbc19541c73424cb232bdeadeddd1a73c6174000397a7af3583ce5278faf082c4
   languageName: node
   linkType: hard
 
@@ -11776,7 +11776,7 @@ __metadata:
     "@loadable/webpack-plugin": 5.15.2
     "@plone/scripts": ^3.6.1
     "@plone/types": 1.0.0-alpha.11
-    "@plone/volto": 18.0.0-alpha.29
+    "@plone/volto": 18.0.0-alpha.32
     "@redux-devtools/extension": ^3.3.0
     "@sinonjs/fake-timers": ^6.0.1
     "@storybook/addon-actions": ^8.0.4

@@ -145,7 +145,7 @@
     "@loadable/component": "5.14.1",
     "@loadable/server": "5.14.0",
     "@plone/scripts": "^3.6.1",
-    "@plone/volto": "18.0.0-alpha.29",
+    "@plone/volto": "18.0.0-alpha.32",
     "@redux-devtools/extension": "^3.3.0",
     "classnames": "2.2.6",
     "connected-react-router": "6.8.0",
