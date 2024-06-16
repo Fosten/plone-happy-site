@@ -19,7 +19,6 @@ __metadata:
   resolution: "@Fosten/volto-happy-theme@workspace:src/addons/volto-happy-theme"
   dependencies:
     "@eeacms/volto-columns-block": "*"
-    "@eeacms/volto-metadata-block": "*"
     "@plone/scripts": "*"
   languageName: unknown
   linkType: soft
@@ -2048,15 +2047,6 @@ __metadata:
   dependencies:
     "@datapunt/matomo-tracker-react": 0.3.1
   checksum: 238fe12d34eb1d108998d536c036b8ca4f68afd35d409d6a12a9331a0b93c87dd048079712d9922bef4ec0dbc3aded188aac98e3a4c5ab9ee9cd6e8b6c0eb27a
-  languageName: node
-  linkType: hard
-
-"@eeacms/volto-metadata-block@npm:*":
-  version: 7.0.0
-  resolution: "@eeacms/volto-metadata-block@npm:7.0.0"
-  dependencies:
-    razzle-plugin-scss: 4.2.18
-  checksum: efa0ad18233d0b83ede81d266a8ff9c07f8148ca4d4e9dedbae4527fa808dc68a7b08f26acd0c96d3be79a28c00e6e7d5eeebfe6d8f9e620d20e6d0240b69b07
   languageName: node
   linkType: hard
 
