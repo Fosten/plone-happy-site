@@ -1968,6 +1968,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dnd-kit/accessibility@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "@dnd-kit/accessibility@npm:3.1.0"
+  dependencies:
+    tslib: ^2.0.0
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: fcb88c961e2f4c226ab575bc4a13712419884bb0f60761befcaa23bcb6c9939dc2cac6633416f2a07baee9a8830350c6df444039332408cdaaf27cad17c6b64b
+  languageName: node
+  linkType: hard
+
+"@dnd-kit/core@npm:6.0.8":
+  version: 6.0.8
+  resolution: "@dnd-kit/core@npm:6.0.8"
+  dependencies:
+    "@dnd-kit/accessibility": ^3.0.0
+    "@dnd-kit/utilities": ^3.2.1
+    tslib: ^2.0.0
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: abe48ff7395f84fd8c15e6c8b13da4df153dc1f1076096d783acd0c25539516c77e4854ea59be6621dde55739cb0df1d62924ad069df3267fe05ad90ef729b2f
+  languageName: node
+  linkType: hard
+
+"@dnd-kit/sortable@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@dnd-kit/sortable@npm:7.0.2"
+  dependencies:
+    "@dnd-kit/utilities": ^3.2.0
+    tslib: ^2.0.0
+  peerDependencies:
+    "@dnd-kit/core": ^6.0.7
+    react: ">=16.8.0"
+  checksum: 4ce705aceb15766a0deefe25a9d95a87e9413c3fb9088ea3eb0962e57f844895000117fcec7c0944a0d4ae4e1e889cfa69e3d3778164d4d23115fb1edb218283
+  languageName: node
+  linkType: hard
+
+"@dnd-kit/utilities@npm:3.2.2, @dnd-kit/utilities@npm:^3.2.0, @dnd-kit/utilities@npm:^3.2.1":
+  version: 3.2.2
+  resolution: "@dnd-kit/utilities@npm:3.2.2"
+  dependencies:
+    tslib: ^2.0.0
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 8a5015c2faa52760ab82a64287b2ac6a3d798867a1bca5ccbc1178560dbd9a1f9f1a21faea80f590ba1a4277c3eb7e7c4d3b4a39f1f32171bf6bc8174b370547
+  languageName: node
+  linkType: hard
+
 "@dual-bundle/import-meta-resolve@npm:^4.0.0":
   version: 4.0.0
   resolution: "@dual-bundle/import-meta-resolve@npm:4.0.0"
@@ -2342,6 +2391,13 @@ __metadata:
   version: 2.1.2
   resolution: "@fal-works/esbuild-plugin-global-externals@npm:2.1.2"
   checksum: c59715902b9062aa7ff38973f298b509499fd146dbf564dc338b3f9e896da5bffb4ca676c27587fde79b3586003e24d65960acb62f009bca43dca34c76f8cbf7
+  languageName: node
+  linkType: hard
+
+"@fiverr/afterbuild-webpack-plugin@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@fiverr/afterbuild-webpack-plugin@npm:1.0.0"
+  checksum: 8b98b4868c259255a536a7436d2acead48bacbdd5dcaa8f9d045c75b1611fc094bc505729af432eab6862238ae2a85e141cd1127a0a375ffc13a2ec3c5bf8d07
   languageName: node
   linkType: hard
 
@@ -3359,9 +3415,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/registry@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@plone/registry@npm:1.5.7"
+"@plone/registry@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@plone/registry@npm:1.6.0"
   dependencies:
     crypto-random-string: 3.2.0
     debug: 4.3.2
@@ -3373,11 +3429,39 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: f356d25cc9f12f3f1acc83e1f8d3f84ba817a1b466739d6b50d035dfc9f69273cf72ea3ecb16dcd2eb9fc5f9c2902fc04af3214c00812a5b00d8c0b7cfa317f7
+  checksum: 23e985cfc7e18c1f6b2fb4efcd8c034204e2ee4991b63da6caa05ff8956132f8d31ac29ef0de34ee4152ee99604a5fc28c9f91f7cbea60b2af84909abeb78e47
   languageName: node
   linkType: hard
 
-"@plone/scripts@npm:*, @plone/scripts@npm:3.6.1, @plone/scripts@npm:^3.0.0, @plone/scripts@npm:^3.6.1":
+"@plone/scripts@npm:*, @plone/scripts@npm:3.6.2, @plone/scripts@npm:^3.0.0":
+  version: 3.6.2
+  resolution: "@plone/scripts@npm:3.6.2"
+  dependencies:
+    "@babel/core": ^7.0.0
+    babel-plugin-react-intl: 5.1.17
+    babel-preset-razzle: 4.2.17
+    chalk: 4
+    commander: 8.2.0
+    comment-json: ^4.2.3
+    execa: 0.6.3
+    find-parent-dir: ^0.3.1
+    fs-extra: 10.1.0
+    git-url-parse: ^13.1.0
+    glob: 7.1.6
+    lodash: 4.17.21
+    mrs-developer: ^2.1.1
+    pofile: 1.0.10
+    wait-on: ^7.2.0
+  bin:
+    addon: addon/index.js
+    changelogupdater: changelogupdater.cjs
+    i18n: i18n.cjs
+    volto-update-deps: volto-update-deps.js
+  checksum: 83dd298ab38ac1636518e099d6e422dc5c15d51f9a434cefb14ffdb29399a31d59f9f1e31ce8b2980846fde670cd14e3e4f6ab413f7584fd7de0e73b150bc485
+  languageName: node
+  linkType: hard
+
+"@plone/scripts@npm:^3.6.1":
   version: 3.6.1
   resolution: "@plone/scripts@npm:3.6.1"
   dependencies:
@@ -3405,9 +3489,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/types@npm:1.0.0-alpha.13":
-  version: 1.0.0-alpha.13
-  resolution: "@plone/types@npm:1.0.0-alpha.13"
+"@plone/types@npm:1.0.0-alpha.16":
+  version: 1.0.0-alpha.16
+  resolution: "@plone/types@npm:1.0.0-alpha.16"
   peerDependencies:
     history: ^5.3.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -3416,13 +3500,13 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 1e6fe525377b88df9206b520103f677ae91fc39448b47ce2d45efe7a4efb3340229d282a3c65d0014e43b78675665a90ba4bc9ca54338255ec83dd3d1c80edd1
+  checksum: f5249263d515e1f939dcd3bb620d21764ef3b21e7eb77169ec64429f1d9d3d82ea2e8e5ce7e5cc5998a8f289cd693740f3d1f2e7681029953fa535d085057ae5
   languageName: node
   linkType: hard
 
-"@plone/volto-slate@npm:18.0.0-alpha.12":
-  version: 18.0.0-alpha.12
-  resolution: "@plone/volto-slate@npm:18.0.0-alpha.12"
+"@plone/volto-slate@npm:18.0.0-alpha.13":
+  version: 18.0.0-alpha.13
+  resolution: "@plone/volto-slate@npm:18.0.0-alpha.13"
   dependencies:
     image-extensions: 1.1.0
     is-url: 1.2.4
@@ -3435,19 +3519,19 @@ __metadata:
     slate-hyperscript: 0.100.0
     slate-react: 0.98.4
     weak-key: ^1.0.2
-  checksum: f4416f754943e5fc4d479fbc345f5d8b1fdabd7f46c43ca80791f819f7aa721fe232c6052855be0d099063e3ffe1d370eaa9ec8869b01c965191570c0e03369e
+  checksum: 0a7826e566a9778aa0e6093e83212861f29ec7374d7e60b4193681b7a53d8abe401261d6cdeb999957d671a1b623f02b097e0e3a19388ae8a7ed64bd6298abe1
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:18.0.0-alpha.32":
-  version: 18.0.0-alpha.32
-  resolution: "@plone/volto@npm:18.0.0-alpha.32"
+"@plone/volto@npm:18.0.0-alpha.35":
+  version: 18.0.0-alpha.35
+  resolution: "@plone/volto@npm:18.0.0-alpha.35"
   dependencies:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
-    "@plone/registry": 1.5.7
-    "@plone/scripts": 3.6.1
-    "@plone/volto-slate": 18.0.0-alpha.12
+    "@plone/registry": 1.6.0
+    "@plone/scripts": 3.6.2
+    "@plone/volto-slate": 18.0.0-alpha.13
     "@redux-devtools/extension": ^3.3.0
     classnames: 2.2.6
     connected-react-router: 6.8.0
@@ -3536,7 +3620,7 @@ __metadata:
     url: ^0.11.3
     use-deep-compare-effect: 1.8.1
     uuid: ^8.3.2
-  checksum: dafca864f484ae2c310376fb647af1e3409518c71ce91d624d4746fd4eec6fdfbc19541c73424cb232bdeadeddd1a73c6174000397a7af3583ce5278faf082c4
+  checksum: 2f0cdefc2bc6498ffc0c2bf96a0e4a7603491a9ade627fcec47bde1470ce95221eb4468e69de150d1547a3e283a643cfe392737129f6f368d458a7aad15a6616
   languageName: node
   linkType: hard
 
@@ -11765,8 +11849,12 @@ __metadata:
     "@babel/plugin-syntax-export-namespace-from": 7.8.3
     "@babel/runtime": 7.20.6
     "@babel/types": 7.20.5
+    "@dnd-kit/core": 6.0.8
+    "@dnd-kit/sortable": 7.0.2
+    "@dnd-kit/utilities": 3.2.2
     "@eeacms/volto-accordion-block": "*"
     "@eeacms/volto-matomo": "*"
+    "@fiverr/afterbuild-webpack-plugin": ^1.0.0
     "@jest/globals": ^29.7.0
     "@kitconcept/volto-slider-block": "*"
     "@loadable/babel-plugin": 5.13.2
@@ -11774,8 +11862,8 @@ __metadata:
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
     "@plone/scripts": ^3.6.1
-    "@plone/types": 1.0.0-alpha.13
-    "@plone/volto": 18.0.0-alpha.32
+    "@plone/types": 1.0.0-alpha.16
+    "@plone/volto": 18.0.0-alpha.35
     "@redux-devtools/extension": ^3.3.0
     "@sinonjs/fake-timers": ^6.0.1
     "@storybook/addon-actions": ^8.0.4
@@ -11791,6 +11879,7 @@ __metadata:
     "@testing-library/jest-dom": 6.4.2
     "@testing-library/react": 14.2.0
     "@testing-library/react-hooks": 8.0.1
+    "@types/history": ^4.7.11
     "@types/jest": ^29.5.8
     "@types/loadable__component": ^5.13.9
     "@types/lodash": ^4.14.201
