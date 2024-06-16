@@ -24,6 +24,21 @@ cd plone-happy-site
 make install
 ```
 
+### Develop
+Let's pull in the add-ons that we will be devloping...
+```shell
+cd plone-happy-site/frontend
+make develop
+yarn
+```
+
+### Build
+Next, place your .env file inside plone-happy-site/frontend and build...
+```shell
+cd plone-happy-site/frontend
+yarn build
+```
+
 ### Start
 
 Start the Backend (http://localhost:8080/)
