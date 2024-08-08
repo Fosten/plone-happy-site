@@ -2416,7 +2416,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-listformat@npm:^1.3.0":
+"@formatjs/intl-displaynames@npm:^1.2.0":
+  version: 1.2.10
+  resolution: "@formatjs/intl-displaynames@npm:1.2.10"
+  dependencies:
+    "@formatjs/intl-utils": ^2.3.0
+  checksum: 25320e00c383260c1c3c44bd8be017b8ebd1b1b7de4188d05934aa40b65adda02b102eba46bf4e01e06f9db79d2d8663a720afe7f2ee69495a3022055bea4810
+  languageName: node
+  linkType: hard
+
+"@formatjs/intl-listformat@npm:^1.4.1":
   version: 1.4.8
   resolution: "@formatjs/intl-listformat@npm:1.4.8"
   dependencies:
@@ -2425,21 +2434,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-relativetimeformat@npm:^4.5.0":
+"@formatjs/intl-relativetimeformat@npm:^4.5.9":
   version: 4.5.16
   resolution: "@formatjs/intl-relativetimeformat@npm:4.5.16"
   dependencies:
     "@formatjs/intl-utils": ^2.3.0
   checksum: 466268cb4f3c326b222cc0f79b176949d4cc79e29d11fe6e8d003b89b3495018728d55ba25189f3856b88c0f5657a57365f039504c32ea78a8fb555ff80e9580
-  languageName: node
-  linkType: hard
-
-"@formatjs/intl-unified-numberformat@npm:^2.1.8":
-  version: 2.2.0
-  resolution: "@formatjs/intl-unified-numberformat@npm:2.2.0"
-  dependencies:
-    "@formatjs/intl-utils": ^1.6.0
-  checksum: 9a5d7221b41479b96bd94b818584ba513668b0f67d89c1030ba976a24e74f36be8be273595afb4774e727a4039bdbb523da2f1aff780445289e9e39f48fb24d5
   languageName: node
   linkType: hard
 
@@ -2452,24 +2452,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-utils@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "@formatjs/intl-utils@npm:1.6.0"
-  checksum: ee6148c92336d44da0ab0cdf985758f884ef1141a7729aac3ed0663dbf0ccca42be6bd626f52859ac52148ac9a86a0629977851810d97c0530040180856669a7
-  languageName: node
-  linkType: hard
-
-"@formatjs/intl-utils@npm:^2.3.0":
+"@formatjs/intl-utils@npm:^2.2.0, @formatjs/intl-utils@npm:^2.3.0":
   version: 2.3.0
   resolution: "@formatjs/intl-utils@npm:2.3.0"
   checksum: a7a6339dac796bccd738b3f0425863c79951156c5b61ed804869bd2ba064544badf3ec0bad576eb56fdbaf11585d99b8a089522a9b5829ba0f99a85d33222cfb
-  languageName: node
-  linkType: hard
-
-"@formatjs/macro@npm:^0.2.6":
-  version: 0.2.8
-  resolution: "@formatjs/macro@npm:0.2.8"
-  checksum: 031b9695f3caa94beee49c11c9dae98a6681e58d603e445f3e097be97991380bce4007ecb3f3689cc74399174293796c2a9806ed713b3d86c7af52ede750b37e
   languageName: node
   linkType: hard
 
@@ -3405,9 +3391,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/registry@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@plone/registry@npm:1.6.0"
+"@plone/registry@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@plone/registry@npm:1.8.0"
   dependencies:
     crypto-random-string: 3.2.0
     debug: 4.3.2
@@ -3419,7 +3405,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 23e985cfc7e18c1f6b2fb4efcd8c034204e2ee4991b63da6caa05ff8956132f8d31ac29ef0de34ee4152ee99604a5fc28c9f91f7cbea60b2af84909abeb78e47
+  checksum: ab87774c3c0c611972c1d907fdf1a4f08ef9e43b97021256f4c28c299e693ec3ea07a6998009d27608afabd289bfd855a28db6547371360605b9f73be0523c62
   languageName: node
   linkType: hard
 
@@ -3479,49 +3465,60 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/types@npm:1.0.0-alpha.16":
-  version: 1.0.0-alpha.16
-  resolution: "@plone/types@npm:1.0.0-alpha.16"
+"@plone/types@npm:1.0.0-alpha.19":
+  version: 1.0.0-alpha.19
+  resolution: "@plone/types@npm:1.0.0-alpha.19"
   peerDependencies:
     history: ^5.3.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-intl: 3.8.0
+    react-intl: 3.12.1
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: f5249263d515e1f939dcd3bb620d21764ef3b21e7eb77169ec64429f1d9d3d82ea2e8e5ce7e5cc5998a8f289cd693740f3d1f2e7681029953fa535d085057ae5
+  checksum: 1cb9ff700e21d7f1d6a405fa041aa7a61887d50973054bb09b3f49099bcb93dc4b234bdeb2bfd61fac26c8544ba496256605cf64a375ecf47465f4e4ea1d7219
   languageName: node
   linkType: hard
 
-"@plone/volto-slate@npm:18.0.0-alpha.13":
-  version: 18.0.0-alpha.13
-  resolution: "@plone/volto-slate@npm:18.0.0-alpha.13"
+"@plone/volto-slate@npm:18.0.0-alpha.17":
+  version: 18.0.0-alpha.17
+  resolution: "@plone/volto-slate@npm:18.0.0-alpha.17"
   dependencies:
+    classnames: 2.2.6
+    github-slugger: 1.4.0
     image-extensions: 1.1.0
+    is-hotkey: 0.2.0
     is-url: 1.2.4
     jsdom: ^16.6.0
+    lodash: 4.17.21
     react: 18.2.0
     react-dom: 18.2.0
     react-intersection-observer: 9.1.0
+    react-intl: 3.12.1
+    react-redux: 8.1.2
+    react-router-dom: 5.2.0
+    react-toastify: 5.5.0
+    redux-mock-store: 1.5.4
+    semantic-ui-react: 2.1.5
     slate: 0.100.0
     slate-history: 0.100.0
     slate-hyperscript: 0.100.0
     slate-react: 0.98.4
+    uuid: ^9.0.1
     weak-key: ^1.0.2
-  checksum: 0a7826e566a9778aa0e6093e83212861f29ec7374d7e60b4193681b7a53d8abe401261d6cdeb999957d671a1b623f02b097e0e3a19388ae8a7ed64bd6298abe1
+  checksum: fc620c1b01fe607690249cc46d383146b4d328dfd39b4a30f4322dcb804ce56f24b40b683abfcb180712dde9767c80a1a68de76664269e01d7e374beb1f2d37f
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:18.0.0-alpha.35":
-  version: 18.0.0-alpha.35
-  resolution: "@plone/volto@npm:18.0.0-alpha.35"
+"@plone/volto@npm:18.0.0-alpha.42":
+  version: 18.0.0-alpha.42
+  resolution: "@plone/volto@npm:18.0.0-alpha.42"
   dependencies:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
-    "@plone/registry": 1.6.0
+    "@plone/registry": 1.8.0
     "@plone/scripts": 3.6.2
-    "@plone/volto-slate": 18.0.0-alpha.13
+    "@plone/volto-slate": 18.0.0-alpha.17
     "@redux-devtools/extension": ^3.3.0
     classnames: 2.2.6
     connected-react-router: 6.8.0
@@ -3570,7 +3567,7 @@ __metadata:
     react-fast-compare: 2.0.4
     react-image-gallery: 1.2.7
     react-intersection-observer: 9.1.0
-    react-intl: 3.8.0
+    react-intl: 3.12.1
     react-intl-redux: 2.3.0
     react-medium-image-zoom: 3.0.15
     react-popper: ^2.3.0
@@ -3581,7 +3578,6 @@ __metadata:
     react-router-hash-link: 2.4.3
     react-select: 4.3.1
     react-select-async-paginate: 0.5.3
-    react-share: 2.3.1
     react-side-effect: 2.1.2
     react-simple-code-editor: 0.7.1
     react-sortable-hoc: 2.0.0
@@ -3610,7 +3606,7 @@ __metadata:
     url: ^0.11.3
     use-deep-compare-effect: 1.8.1
     uuid: ^8.3.2
-  checksum: 2f0cdefc2bc6498ffc0c2bf96a0e4a7603491a9ade627fcec47bde1470ce95221eb4468e69de150d1547a3e283a643cfe392737129f6f368d458a7aad15a6616
+  checksum: 810093d10ad98019190d435ec400a5a0a172c1e552d7d6889670f9a17066225e39f1eb6f93e85bea1c4f003a42de5b99bdf6f1e5134d7359debc946d84ad7ecc
   languageName: node
   linkType: hard
 
@@ -5032,7 +5028,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/invariant@npm:^2.2.30":
+"@types/invariant@npm:^2.2.31":
   version: 2.2.37
   resolution: "@types/invariant@npm:2.2.37"
   checksum: dd6ee07af8516d21c868f95fd96c601c50a231e69c2df69360cb491b5858c76cf9b5a646df166cb4197b5078ca824da3dd90d6142d01a3cefc1176c57278b129
@@ -11852,8 +11848,8 @@ __metadata:
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
     "@plone/scripts": ^3.6.1
-    "@plone/types": 1.0.0-alpha.16
-    "@plone/volto": 18.0.0-alpha.35
+    "@plone/types": 1.0.0-alpha.19
+    "@plone/volto": 18.0.0-alpha.42
     "@redux-devtools/extension": ^3.3.0
     "@sinonjs/fake-timers": ^6.0.1
     "@storybook/addon-actions": ^8.0.4
@@ -11981,7 +11977,7 @@ __metadata:
     react-fast-compare: 2.0.4
     react-image-gallery: 1.2.7
     react-intersection-observer: 9.1.0
-    react-intl: 3.8.0
+    react-intl: 3.12.1
     react-intl-redux: 2.3.0
     react-is: ^18.2.0
     react-medium-image-zoom: 3.0.15
@@ -12038,8 +12034,8 @@ __metadata:
     use-deep-compare-effect: 1.8.1
     use-trace-update: 1.3.2
     uuid: ^8.3.2
-    volto-form-block: ^3.8.3
-    volto-subblocks: ^2.0.0
+    volto-form-block: "*"
+    volto-subblocks: "*"
     wait-on: 6.0.0
     webpack: 5.90.1
     webpack-bundle-analyzer: 4.10.1
@@ -13538,21 +13534,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-format-cache@npm:^4.2.12, intl-format-cache@npm:^4.2.21":
+"intl-format-cache@npm:^4.2.21":
   version: 4.3.1
   resolution: "intl-format-cache@npm:4.3.1"
   checksum: d55581edaba0d083a3ff26a46e2ed953c434420918e61991db78140e3e0a7db14f924f195fcd0c01cf3de65cb18dda0c549d35f683e01dd8f062d27fe0524fae
   languageName: node
   linkType: hard
 
-"intl-locales-supported@npm:^1.8.4":
-  version: 1.8.11
-  resolution: "intl-locales-supported@npm:1.8.11"
-  checksum: 8c9a6b1a40c861493454453b9b6d1c3aa0365da02be1a7ce650328db47811753ebaf532301323d089b13268f0e752a73bc85a073554a8017b6d121734d037ac4
-  languageName: node
-  linkType: hard
-
-"intl-messageformat-parser@npm:^3.4.0, intl-messageformat-parser@npm:^3.6.3, intl-messageformat-parser@npm:^3.6.4":
+"intl-messageformat-parser@npm:^3.6.3, intl-messageformat-parser@npm:^3.6.4":
   version: 3.6.4
   resolution: "intl-messageformat-parser@npm:3.6.4"
   dependencies:
@@ -13561,7 +13550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat@npm:^7.7.0":
+"intl-messageformat@npm:^7.8.4":
   version: 7.8.4
   resolution: "intl-messageformat@npm:7.8.4"
   dependencies:
@@ -13571,7 +13560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.1.0, invariant@npm:^2.1.1, invariant@npm:^2.2.4":
+"invariant@npm:^2.1.0, invariant@npm:^2.2.4":
   version: 2.2.4
   resolution: "invariant@npm:2.2.4"
   dependencies:
@@ -19548,26 +19537,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intl@npm:3.8.0":
-  version: 3.8.0
-  resolution: "react-intl@npm:3.8.0"
+"react-intl@npm:3.12.1":
+  version: 3.12.1
+  resolution: "react-intl@npm:3.12.1"
   dependencies:
-    "@formatjs/intl-listformat": ^1.3.0
-    "@formatjs/intl-relativetimeformat": ^4.5.0
-    "@formatjs/intl-unified-numberformat": ^2.1.8
-    "@formatjs/macro": ^0.2.6
+    "@formatjs/intl-displaynames": ^1.2.0
+    "@formatjs/intl-listformat": ^1.4.1
+    "@formatjs/intl-relativetimeformat": ^4.5.9
+    "@formatjs/intl-unified-numberformat": ^3.2.0
+    "@formatjs/intl-utils": ^2.2.0
     "@types/hoist-non-react-statics": ^3.3.1
-    "@types/invariant": ^2.2.30
-    hoist-non-react-statics: ^3.3.1
-    intl-format-cache: ^4.2.12
-    intl-locales-supported: ^1.8.4
-    intl-messageformat: ^7.7.0
-    intl-messageformat-parser: ^3.4.0
-    invariant: ^2.1.1
-    shallow-equal: ^1.1.0
+    "@types/invariant": ^2.2.31
+    hoist-non-react-statics: ^3.3.2
+    intl-format-cache: ^4.2.21
+    intl-messageformat: ^7.8.4
+    intl-messageformat-parser: ^3.6.4
+    shallow-equal: ^1.2.1
   peerDependencies:
     react: ^16.3.0
-  checksum: 94b86d70f4d50e432c647827b661232b688de06f4bfbb1877996a079c7280a48fba7e6a78e7efc03d550556e8aaefb973496df813cb59c50388d4d6fc29eacf1
+  checksum: 4a9e9101d8d5bd60c73713b99bdad2deb2b6b21fd953f16165b5c4be64aafd503418e009736ba986ca75756c08ad41b80991090e222d80b2bebfefb027bf11eb
   languageName: node
   linkType: hard
 
@@ -21302,7 +21290,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shallow-equal@npm:^1.1.0":
+"shallow-equal@npm:^1.2.1":
   version: 1.2.1
   resolution: "shallow-equal@npm:1.2.1"
   checksum: 4f1645cc516e7754c4438db687e1da439a5f29a7dba2ba90c5f88e5708aeb17bc4355ba45cad805b0e95dc898e37d8bf6d77d854919c7512f89939986cff8cd1
@@ -23774,7 +23762,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^9.0.0":
+"uuid@npm:^9.0.0, uuid@npm:^9.0.1":
   version: 9.0.1
   resolution: "uuid@npm:9.0.1"
   bin:
@@ -23836,30 +23824,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"volto-form-block@npm:^3.8.3":
-  version: 3.8.3
-  resolution: "volto-form-block@npm:3.8.3"
+"volto-form-block@npm:*":
+  version: 3.9.2
+  resolution: "volto-form-block@npm:3.9.2"
   dependencies:
     "@hcaptcha/react-hcaptcha": ^0.3.6
     file-saver: ^2.0.5
     react-google-recaptcha-v3: ^1.8.0
-    volto-subblocks: ^2.0.0
+    volto-subblocks: ^2.1.0
   peerDependencies:
     "@plone/volto": ">=16.0.0-alpha.38"
-    volto-subblocks: ^2.0.0
-  checksum: 44b043f3eab2ef11c328b1b185ea9711a6e67344745708f5b9f293fcde75f6037e5cd5e9baee2ee0ce4a661a1ef752564d73da12e4b792a475bce6b4bc0a47b8
+    volto-subblocks: ^2.1.0
+  checksum: a47c5241bed9e5959241ccadd3992753718b0b1fae5f3104089600c5f0d2b71193d9c0a41235e7e9f3fadce9691a5c0bc14722d667cbcf8a1a5793a381c4a746
   languageName: node
   linkType: hard
 
-"volto-subblocks@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "volto-subblocks@npm:2.0.0"
+"volto-subblocks@npm:*, volto-subblocks@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "volto-subblocks@npm:2.1.0"
   dependencies:
     react-dnd: ^5.0.0
     react-dnd-html5-backend: ^5.0.1
   peerDependencies:
     "@plone/volto": ">=16.0.0-alpha.38"
-  checksum: 7e4774cd63aad14d46f8371d725d800cc978dafb3672cb9ddb16e032b8fc849948d7e39301c3d55864a40d5143e101fd819165ba5254a016be31812f826c4f76
+  checksum: a1cc02ca26176b44398445084c9b90330e898ccb725247f131e71dcc8b1c9e70b3352b8dd4fcf322ea60df7970c02f001454151ab7a82b7a6f6ab96ed4ffc8d5
   languageName: node
   linkType: hard
 
