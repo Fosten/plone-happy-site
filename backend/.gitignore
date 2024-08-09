@@ -19,6 +19,7 @@ lib64/
 local/
 node_modules/
 parts/
+sources/
 src/plone_happy_site/setuphandlers/data/*.json
 dist/*
 test.plone_addon/
