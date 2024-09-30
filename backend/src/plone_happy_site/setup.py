@@ -51,6 +51,7 @@ setup(
         "plone.api",
         "collective.volto.formsupport[honeypot]",
         "collective.honeypot",
+        "eea.banner",
     ],
     extras_require={
         "test": [

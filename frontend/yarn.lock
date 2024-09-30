@@ -2031,6 +2031,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eeacms/volto-banner@npm:*":
+  version: 4.0.0
+  resolution: "@eeacms/volto-banner@npm:4.0.0"
+  checksum: f9d7f455dcd940582a02478007bb698fef9e27c65f321fda405acc8dcaa63d5e6803485925ca5e36db586b12d82ddfb9fc1c8800360b5f6981f26ed9bb0583b4
+  languageName: node
+  linkType: hard
+
 "@eeacms/volto-columns-block@npm:*":
   version: 8.0.0
   resolution: "@eeacms/volto-columns-block@npm:8.0.0"
@@ -11838,6 +11845,7 @@ __metadata:
     "@dnd-kit/sortable": 7.0.2
     "@dnd-kit/utilities": 3.2.2
     "@eeacms/volto-accordion-block": "*"
+    "@eeacms/volto-banner": "*"
     "@eeacms/volto-columns-block": "*"
     "@eeacms/volto-matomo": "*"
     "@fiverr/afterbuild-webpack-plugin": ^1.0.0
