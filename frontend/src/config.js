@@ -24,6 +24,13 @@ export default function applyConfig(config) {
     defaultLanguage: 'en-us',
     matomoSiteId: '1',
     matomoUrlBase: 'https://stats.happybaseball.com/',
+    serverConfig: {
+      ...config.settings.serverConfig,
+      extractScripts: {
+        ...config.settings.serverConfig.extractScripts,
+        errorPages: true,
+      },
+    },
   };
   return config;
 }
