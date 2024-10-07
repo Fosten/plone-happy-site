@@ -25,7 +25,7 @@ services:
         - traefik.http.services.testing_happy-frontend.loadbalancer.server.port=3000
         # MIDDLEWARES
         ### ClassicUI Access Authentication
-        - traefik.http.middlewares.testing_happy-frontend-auth.basicauth.users=testing:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.UpdwwHqB8gJNp8TQ4s4qDK8LxjfISl6
+        - traefik.http.middlewares.testing_happy-frontend-auth.basicauth.users=testing:${TRAEFIK_HASHED_PASSWORD}
         # HOSTS: Main
         - traefik.http.routers.testing_happy-frontend.rule=Host(`testing.happybaseball.com`)
         - traefik.http.routers.testing_happy-frontend.entrypoints=websecure
@@ -56,8 +56,8 @@ services:
         - traefik.http.services.testing_happy-backend.loadbalancer.server.port=8080
         # MIDDLEWARES
         ### basic_auth Authentication ClassicUI & Zope
-        - traefik.http.middlewares.testing_happy-backend-auth.basicauth.users=admin:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.UpdwwHqB8gJNp8TQ4s4qDK8LxjfISl6
-        - traefik.http.middlewares.testing_happy-zope-auth.basicauth.users=admin:$$2y$$05$$hGP72w.Rgky4RK7FrN9km.UpdwwHqB8gJNp8TQ4s4qDK8LxjfISl6
+        - traefik.http.middlewares.testing_happy-backend-auth.basicauth.users=admin:${TRAEFIK_HASHED_PASSWORD}
+        - traefik.http.middlewares.testing_happy-zope-auth.basicauth.users=admin:${TRAEFIK_HASHED_PASSWORD}
         ### Backend ++api++ VHM
         - "traefik.http.middlewares.testing_happy-vhm-cleanup.replacepathregex.regex=^/((\\+\\+api\\+\\+/){1,})($$|.*)"
         - "traefik.http.middlewares.testing_happy-vhm-cleanup.replacepathregex.replacement=/VirtualHostBase/https/testing.happybaseball.com/Plone/++api++/VirtualHostRoot/$$3"
