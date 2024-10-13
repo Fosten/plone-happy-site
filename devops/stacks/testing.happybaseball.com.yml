@@ -1,4 +1,4 @@
-version: "3.3"
+version: '3.9'
 services:
 
   frontend:
@@ -8,8 +8,6 @@ services:
       - traefik-testing_happy
     environment:
       RAZZLE_INTERNAL_API_PATH: http://testing-happybaseball-com_backend:8080/Plone
-    ports:
-      - "3012:3000"
     depends_on:
       - backend
     deploy:
@@ -41,8 +39,6 @@ services:
       - traefik-testing_happy
     environment:
       RELSTORAGE_DSN: "dbname='${TESTING_DB_NAME:-plone}' user='${TESTING_DB_USER:-plone}' host='${DB_HOST:-db}' password='${DB_PASSWORD:-plone}'"
-    ports:
-      - "8092:8080"
     deploy:
       replicas: 1
       placement:
