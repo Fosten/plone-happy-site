@@ -59,6 +59,7 @@ setup(
         "collective.volto.formsupport[honeypot]",
         "collective.honeypot",
         "eea.banner",
+        "rss_provider",
     ],
     extras_require={
         "test": [
