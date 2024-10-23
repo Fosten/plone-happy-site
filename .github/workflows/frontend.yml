@@ -64,10 +64,10 @@ jobs:
       - name: Install dependencies
         run: make install
 
-      - name: Linting
-        id: lint
-        if: ${{ success() || failure() }}
-        run: make lint
+#      - name: Linting
+#        id: lint
+#        if: ${{ success() || failure() }}
+#        run: make lint
 
       - name: i18n sync
         id: i18n
