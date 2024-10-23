@@ -1,6 +1,0 @@
-graft src/plone_happy_site
-graft docs
-include *.rst
-include *.md
-include *.cfg
-global-exclude *.pyc

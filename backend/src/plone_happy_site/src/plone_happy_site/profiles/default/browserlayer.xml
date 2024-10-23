@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layers>
-  <layer interface="plone_happy_site.interfaces.IPLONE_HAPPY_SITELayer"
-         name="plone_happy_site"
-  />
-</layers>

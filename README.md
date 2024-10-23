@@ -1,94 +1,110 @@
-# Plone Happy Site
+# Plone Happy Site 🚀
 
-[![Built with Cookiecutter Plone Starter](https://img.shields.io/badge/built%20with-Cookiecutter%20Plone%20Starter-0083be.svg?logo=cookiecutter)](https://github.com/collective/cookiecutter-plone-starter/)
+[![Built with Cookieplone](https://img.shields.io/badge/built%20with-Cookieplone-0083be.svg?logo=cookiecutter)](https://github.com/plone/cookiecutter-plone/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![Backend Tests](https://github.com/fosten/plone-happy-site/actions/workflows/backend-testing.yml/badge.svg)](https://github.com/fosten/plone-happy-site/actions/workflows/backend-testing.yml)
-[![Frontend Tests](https://github.com/fosten/plone-happy-site/actions/workflows/frontend-testing.yml/badge.svg)](https://github.com/fosten/plone-happy-site/actions/workflows/frontend-testing.yml)
+[![Backend Tests](https://github.com/fosten/plone-happy-site/actions/workflows/backend.yml/badge.svg)](https://github.com/fosten/plone-happy-site/actions/workflows/backend.yml)
+[![Frontend Tests](https://github.com/fosten/plone-happy-site/actions/workflows/frontend.yml/badge.svg)](https://github.com/fosten/plone-happy-site/actions/workflows/frontend.yml)
 
 Plone 6 website for Happy Baseball
 
-## Quick start
+## Quick Start 🏁
 
-### Development Setup
+### Prerequisites ✅
 
-- Python 3.10, 3.11, 3.12
-- Node 18
-- yarn
-- Docker
+Ensure you have the following installed:
 
-### Install
+- Python 3.11 🐍
+- Node 20 🟩
+- pnpm 🧶
+- Docker 🐳
+
+### Installation 🔧
+
+1. Clone the repository:
 
 ```shell
 git clone git@github.com:fosten/plone-happy-site.git
 cd plone-happy-site
+```
+
+2. Install both Backend and Frontend:
+
+```shell
 make install
 ```
 
-### Develop
-Let's pull in the add-ons that we will be devloping...
-```shell
-cd plone-happy-site/frontend
-make develop
-yarn
-```
+### Fire Up the Servers 🔥
 
-### Build
-Next, place your .env file inside plone-happy-site/frontend and build...
-```shell
-cd plone-happy-site/frontend
-yarn build
-```
-
-### Start
-
-Start the Backend (http://localhost:8080/)
+1. Create a new Plone site on your first run:
 
 ```shell
-make start-backend
+make backend-create-site
 ```
 
-Start the Frontend (http://localhost:3000/)
+2. Start the Backend at [http://localhost:8080/](http://localhost:8080/):
 
 ```shell
-make start-frontend
+make backend-start
 ```
 
-## Structure
+3. In a new terminal, start the Frontend at [http://localhost:3000/](http://localhost:3000/):
 
-This monorepo is composed by two distinct codebases: api and frontend.
+```shell
+make frontend-start
+```
 
-- **backend**: API (Backend) Plone installation using pip (not buildout). Includes a policy package named plone_happy_site
-- **frontend**: React (Volto) package named frontend
+Voila! Your Plone site should be live and kicking! 🎉
 
-### Reasoning
+### Local Stack Deployment 📦
 
-- Repo contains all codebase needed to run the site (excluding existing addons for Plone and React).
-- Github Workflows are triggered based on changes on each codebase (see .github/workflows)
-- Easier to create Docker images for each codebase
-- Showcase Plone installation/setup without buildout
+Deploy a local `Docker Compose` environment that includes:
 
-## Linters and Formatting
+- Docker images for Backend and Frontend 🖼️
+- A stack with a Traefik router and a Postgres database 🗃️
+- Accessible at [http://plone-happy-site.localhost](http://plone-happy-site.localhost) 🌐
 
-There are some hooks to run lint checks on the code. If you want to automatically format them, you can run
+Execute the following:
 
-`make format`
+```shell
+make stack-start
+make stack-create-site
+```
 
-in the root folder or especifically in each backend or frontend folders.
+And... you're all set! Your Plone site is up and running locally! 🚀
 
-Linters commands are available in each backend and frontend folder.
+## Project Structure 🏗️
 
-## Acceptance tests
+This monorepo consists of three distinct sections: `backend`, `frontend`, and `devops`.
 
-There are `Makefile` commands in place:
+- **backend**: Houses the API and Plone installation, utilizing pip instead of buildout, and includes a policy package named plone.happy_site.
+- **frontend**: Contains the React (Volto) package.
+- **devops**: Encompasses Docker Stack, Ansible playbooks, and Cache settings.
 
-`build-test-acceptance-server`: Build Acceptance Backend Server Docker image that it's being used afterwards. Must be run before running the tests, if the backend code has changed.
+### Why This Structure? 🤔
 
-`start-test-acceptance-server`: Start server fixture in docker (previous build required)
+- All necessary codebases to run the site are contained within the repo (excluding existing addons for Plone and React).
+- Specific GitHub Workflows are triggered based on changes in each codebase (refer to .github/workflows).
+- Simplifies the creation of Docker images for each codebase.
+- Demonstrates Plone installation/setup without buildout.
 
-`start-test-acceptance-frontend`: Start the Core Acceptance Frontend Fixture in dev mode
+## Code Quality Assurance 🧐
 
-`test-acceptance`: Start Core Cypress Acceptance Tests in dev mode
+To automatically format your code and ensure it adheres to quality standards, execute:
 
-## Credits
+```shell
+make check
+```
 
-**This was generated by [cookiecutter-plone-starter](https://github.com/collective/cookiecutter-plone-starter) on 2023-01-30 19:10:20**
+Linters can be run individually within the `backend` or `frontend` folders.
+
+## Internationalization 🌐
+
+Generate translation files for Plone and Volto with ease:
+
+```shell
+make i18n
+```
+
+## Credits and Acknowledgements 🙏
+
+Crafted with care by **Generated using [Cookieplone (0.7.1)](https://github.com/plone/cookieplone) and [cookiecutter-plone (6f17615)](https://github.com/plone/cookiecutter-plone/commit/6f1761520019010ae3799dfa0c6b999b533d59a7) on 2024-10-23 10:56:53.072151**. A special thanks to all contributors and supporters!

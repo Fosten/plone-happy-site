@@ -1,20 +1,28 @@
 {
-    "volto-happy-theme": {
-        "url": "https://github.com/Fosten/volto-happy-theme.git",
-        "path": "src",
-        "package": "@Fosten/volto-happy-theme",
-        "branch": "main"
-    },
-    "volto-baseball": {
-        "url": "https://github.com/Fosten/volto-baseball.git",
-        "path": "src",
-        "package": "@Fosten/volto-baseball",
-        "branch": "main"
-    },
-    "volto-fullcalendar-block": {
-        "url": "https://github.com/fosten/volto-fullcalendar-block.git",
-        "path": "src",
-        "package": "@fosten/volto-fullcalendar-block",
-        "branch": "google-calendar"
-    }
+  "core": {
+    "output": "./",
+    "package": "@plone/volto",
+    "url": "git@github.com:plone/volto.git",
+    "https": "https://github.com/plone/volto.git",
+    "tag": "18.0.0-alpha.46"
+  },
+  "volto-happy-theme": {
+    "develop": true,
+    "output": "packages",
+    "url": "git@github.com:fosten/volto-happy-theme.git",
+    "https": "https://github.com/fosten/volto-happy-theme.git"
+  },
+  "volto-baseball": {
+    "develop": true,
+    "output": "packages",
+    "url": "git@github.com:fosten/volto-baseball.git",
+    "https": "https://github.com/fosten/volto-baseball.git"
+  },
+  "volto-fullcalendar-block": {
+    "develop": true,
+    "output": "packages",
+    "url": "git@github.com:fosten/volto-fullcalendar-block.git",
+    "https": "https://github.com/fosten/volto-fullcalendar-block.git",
+    "branch": "google-calendar"
+  }
 }
