@@ -36,7 +36,6 @@
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
     "volto-happy-site": "workspace:*",
-    "@Fosten/volto-baseball": "workspace:*",
     "@mbarde/volto-fullcalendar-block": "workspace:*",
     "@Fosten/volto-happy-theme": "workspace:*"
   },
