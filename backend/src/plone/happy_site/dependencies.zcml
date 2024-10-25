@@ -4,4 +4,6 @@
   <include package="plone.restapi" />
   <include package="plone.volto" />
 
+  <include package="collective.listmonk" />
+
 </configure>

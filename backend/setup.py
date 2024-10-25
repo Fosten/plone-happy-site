@@ -58,6 +58,7 @@ setup(
         "plone.exportimport",
         "collective.volto.formsupport[honeypot]",
         "collective.honeypot",
+        "collective.listmonk",
         "eea.banner",
         "rss_provider",
     ],
