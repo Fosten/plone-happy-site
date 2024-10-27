@@ -18,6 +18,12 @@
     "url": "git@github.com:fosten/volto-baseball.git",
     "https": "https://github.com/fosten/volto-baseball.git"
   },
+  "volto-byline": {
+    "develop": true,
+    "output": "packages",
+    "url": "git@github.com:fosten/volto-byline.git",
+    "https": "https://github.com/fosten/volto-byline.git"
+  },
   "volto-fullcalendar-block": {
     "develop": true,
     "output": "packages",

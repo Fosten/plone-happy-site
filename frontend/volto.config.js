@@ -1,6 +1,7 @@
 const addons = [
   'volto-happy-site',
   'volto-baseball',
+  'volto-byline',
   '@mbarde/volto-fullcalendar-block',
   'volto-happy-theme'
 ];

@@ -12,5 +12,6 @@ results
 pnpm-lock.yaml
 /public
 /packages/volto-baseball/
-/packages/volto-happy-theme/
+/packages/volto-byline/
 /packages/volto-fullcalendar-block/
+/packages/volto-happy-theme/
