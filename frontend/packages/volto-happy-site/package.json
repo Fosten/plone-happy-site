@@ -42,7 +42,8 @@
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-slider-block": "*",
     "volto-form-block": "*",
-    "volto-rss-provider": "*"
+    "volto-rss-provider": "*",
+    "querystring-es3": "*"
   },
   "peerDependencies": {
     "react": "18.2.0",
