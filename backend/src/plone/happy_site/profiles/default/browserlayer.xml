@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layers>
+  <layer name="plone_happy_site"
+         remove="true"
+  />
   <layer interface="plone.happy_site.interfaces.IBrowserLayer"
          name="plone.happy_site"
   />
