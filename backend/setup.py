@@ -61,6 +61,7 @@ setup(
         "collective.listmonk",
         "eea.banner",
         "rss_provider",
+        "kitconcept.seo",
     ],
     extras_require={
         "test": [
