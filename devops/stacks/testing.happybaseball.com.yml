@@ -34,7 +34,7 @@ services:
         # Routers
         ## /
         - traefik.http.routers.testing_happy-frontend.rule=Host(`testing.happybaseball.com`)
-        - traefik.http.routers.testing_happy-frontend.entrypoints=websecure
+        - traefik.http.routers.testing_happy-frontend.entrypoints=https
         - traefik.http.routers.testing_happy-frontend.tls=true
         - traefik.http.routers.testing_happy-frontend.tls.certresolver=mydnschallenge
         - traefik.http.routers.testing_happy-frontend.service=testing_happy-frontend
@@ -75,13 +75,13 @@ services:
         # Routes
         ## /++api++
         - traefik.http.routers.testing_happy-backend-api.rule=Host(`testing.happybaseball.com`) && PathPrefix(`/++api++`)
-        - traefik.http.routers.testing_happy-backend-api.entrypoints=websecure
+        - traefik.http.routers.testing_happy-backend-api.entrypoints=https
         - traefik.http.routers.testing_happy-backend-api.tls=true
         - traefik.http.routers.testing_happy-backend-api.service=testing_happy-backend
         - traefik.http.routers.testing_happy-backend-api.middlewares=gzip,testing_happy-backend-vhm-api
         ## /ClassicUI
         - traefik.http.routers.testing_happy-backend-classic.rule=Host(`testing.happybaseball.com`) && PathPrefix(`/ClassicUI`)
-        - traefik.http.routers.testing_happy-backend-classic.entrypoints=websecure
+        - traefik.http.routers.testing_happy-backend-classic.entrypoints=https
         - traefik.http.routers.testing_happy-backend-classic.tls=true
         - traefik.http.routers.testing_happy-backend-classic.service=testing_happy-backend
         - traefik.http.routers.testing_happy-backend-classic.middlewares=gzip,testing_happy-backend-auth,testing_happy-backend-vhm-classic
