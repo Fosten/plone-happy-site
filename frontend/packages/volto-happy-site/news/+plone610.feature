@@ -1,1 +1,1 @@
-Bump Plone from 6.0.13 to 6.1.0b2 @fosten
+Bump Plone from 6.0.13 to 6.1.0rc1 @fosten
