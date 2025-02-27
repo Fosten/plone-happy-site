@@ -1,1 +1,1 @@
-Bump Volto from 18.0.0-alpha.42 to 18.8.1 @fosten
+Bump Volto from 18.0.0-alpha.42 to 18.9.1 @fosten
