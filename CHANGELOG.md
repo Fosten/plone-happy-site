@@ -13,7 +13,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- towncrier release notes start -->
 
-# 1.2.0 (2024-10-23)
+## 2.1.0 (2024-03-30)
+
+- Update CHANGELOG.md
+- Bump package.json versions to 2.1.0 [fosten]
+- Bump Plone from 6.1.0 to 6.1.1 [fosten]
+- Bump Volto from 18.0.0 to 18.10.1 [fosten]
+- Set python_requires to >=3.10 [fosten]
+- Switch from z3c.autoinclude.plugin to plone.autoinclude.plugin [fosten]
+- Bump Plone from 6.0.13 to 6.1.0 [fosten]
+- corepack signature verfication workaround [fosten]
+- Change traefik.docker to traefik.swarm [fosten]
+
+## 2.0.0 (2024-11-02)
+
+- Remove old browserlayer in new install profile [fosten]
+- Add kitconcept.seo and enable for Image type [fosten]
+- Bump Volto from 18.0.0-alpha.42 to 18.0.0 [fosten]
+- Update .eslintrc.js and storybook/main.js [fosten]
+- Add config.resolve.fallback querystring to querystring-es3 [fosten]
+- Add volto-byline [fosten]
+- Add collective.listmonk [fosten]
+- Add volto-rss-provider and rss_provider [fosten]
+- Refactor using cookieplone [fosten]
+
+## 1.2.0 (2024-10-23)
 
 - Update CHANGELOG.md [fosten]
 - Remove ports [fosten]
@@ -28,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bump Volto from 18.0.0-alpha.35 to 18.0.0-alpha.42 [fosten]
 - Add typescript support, volto-slate [fosten]
 
-# 1.1.0 (2024-05-24)
+## 1.1.0 (2024-05-24)
 
 - Add collective.volto.formsupport, volto-form-block, volto-subblocks [fosten]
 - Add volto-fullcalendar-block [fosten]
@@ -37,7 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade Plone 6.0.11 [fosten]
 - Bump node from 16 to 20 [fosten]
 
-# 1.0.0 (2023-09-27)
+## 1.0.0 (2023-09-27)
 
 - Add release stack [fosten]
 - Add testing stack [fosten]
@@ -46,12 +70,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade 6.0.6/17.0.0-alpha.23 [fosten]
 - Add volto-baseball and plone-baseball [fosten]
 
-# 0.2.0 (2023-02-12)
+## 0.2.0 (2023-02-12)
 
 - Add matomo config [fosten]
 - ​​checksumBehavior: update, re-add theme [fosten]
 - Add volto-happy-theme [fosten]
 
-# 0.1.0 (2023-01-30)
+## 0.1.0 (2023-01-30)
 
 - Initial commit [fosten]
