@@ -41,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add volto-byline [fosten]
 - Add collective.listmonk [fosten]
 - Add volto-rss-provider and rss_provider [fosten]
+- Bump node from 20 to 22 [fosten]
 - Refactor using cookieplone [fosten]
 
 ## 1.2.0 (2024-10-23)
