@@ -38,7 +38,7 @@ services:
         - traefik.http.routers.testing_happy-frontend.tls=true
         - traefik.http.routers.testing_happy-frontend.tls.certresolver=mydnschallenge
         - traefik.http.routers.testing_happy-frontend.service=testing_happy-frontend
-        - traefik.http.routers.testing_happy-frontend.middlewares=gzip,testing_happy-frontend-auth
+        - traefik.http.routers.testing_happy-frontend.middlewares=testing_happy-frontend-auth
 
   backend:
     image: ghcr.io/fosten/plone-happy-site-backend:${STACK_PARAM:-latest}
@@ -78,13 +78,13 @@ services:
         - traefik.http.routers.testing_happy-backend-api.entrypoints=https
         - traefik.http.routers.testing_happy-backend-api.tls=true
         - traefik.http.routers.testing_happy-backend-api.service=testing_happy-backend
-        - traefik.http.routers.testing_happy-backend-api.middlewares=gzip,testing_happy-backend-vhm-api
+        - traefik.http.routers.testing_happy-backend-api.middlewares=testing_happy-backend-vhm-api
         ## /ClassicUI
         - traefik.http.routers.testing_happy-backend-classic.rule=Host(`testing.happybaseball.com`) && PathPrefix(`/ClassicUI`)
         - traefik.http.routers.testing_happy-backend-classic.entrypoints=https
         - traefik.http.routers.testing_happy-backend-classic.tls=true
         - traefik.http.routers.testing_happy-backend-classic.service=testing_happy-backend
-        - traefik.http.routers.testing_happy-backend-classic.middlewares=gzip,testing_happy-backend-auth,testing_happy-backend-vhm-classic
+        - traefik.http.routers.testing_happy-backend-classic.middlewares=testing_happy-backend-auth,testing_happy-backend-vhm-classic
 
 networks:
   traefik-public:
