@@ -33,7 +33,8 @@
     "@eeacms/volto-matomo",
     "@kitconcept/volto-slider-block",
     "volto-form-block",
-    "@plone-collective/volto-rss-provider"
+    "@plone-collective/volto-rss-provider",
+    "@plone-collective/volto-authomatic"
   ],
   "dependencies": {
     "@eeacms/volto-accordion-block": "*",
@@ -43,7 +44,8 @@
     "@kitconcept/volto-slider-block": "*",
     "volto-form-block": "*",
     "@plone-collective/volto-rss-provider": "*",
-    "querystring-es3": "*"
+    "querystring-es3": "*",
+    "@plone-collective/volto-authomatic": "3.0.0-alpha.1"
   },
   "peerDependencies": {
     "react": "18.2.0",

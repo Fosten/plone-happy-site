@@ -6,6 +6,7 @@ const applyConfig = (config) => {
     defaultLanguage: 'en-us',
     matomoSiteId: '1',
     matomoUrlBase: 'https://stats.happybaseball.com/',
+    showPloneLogin: false,
     serverConfig: {
       ...config.settings.serverConfig,
       extractScripts: {
