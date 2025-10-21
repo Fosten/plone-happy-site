@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bump Plone from 6.1.1 to 6.1.3 [fosten]
 - Remove duplicate gzip middleware declarations [fosten]
 - Change volto-rss-provider to @plone-collective/volto-rss-provider [fosten]
-- Bump Volto from 18.10.1 to 19.0.0-alpha.4 [fosten]
+- Bump Volto from 18.10.1 to 19.0.0-alpha.7 [fosten]
 
 ## 2.1.0 (2024-03-30)
 
