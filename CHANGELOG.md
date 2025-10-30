@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- towncrier release notes start -->
 
-## Unreleased
+## [Unreleased]
 
 - Add volto-authomatic, pas.plugins.oidc, pas.plugins.keycloakgroups [fosten]
 - Bump Plone from 6.1.1 to 6.1.3 [fosten]
@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change volto-rss-provider to @plone-collective/volto-rss-provider [fosten]
 - Bump Volto from 18.10.1 to 19.0.0-alpha.9 [fosten]
 
-## 2.1.0 (2024-03-30)
+## [2.1.0] (2024-03-30)
 
 - Update CHANGELOG.md
 - Bump package.json versions to 2.1.0 [fosten]
@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - corepack signature verfication workaround [fosten]
 - Change traefik.docker to traefik.swarm [fosten]
 
-## 2.0.0 (2024-11-02)
+## [2.0.0] (2024-11-02)
 
 - Rename traefik entrypoints [fosten]
 - Remove old browserlayer in new install profile [fosten]
@@ -47,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bump node from 20 to 22 [fosten]
 - Refactor using cookieplone [fosten]
 
-## 1.2.0 (2024-10-23)
+## [1.2.0] (2024-10-23)
 
 - Update CHANGELOG.md [fosten]
 - Remove ports [fosten]
@@ -62,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bump Volto from 18.0.0-alpha.35 to 18.0.0-alpha.42 [fosten]
 - Add typescript support, volto-slate [fosten]
 
-## 1.1.0 (2024-05-24)
+## [1.1.0] (2024-05-24)
 
 - Add collective.volto.formsupport, volto-form-block, volto-subblocks [fosten]
 - Add volto-fullcalendar-block [fosten]
@@ -71,7 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade Plone 6.0.11 [fosten]
 - Bump node from 16 to 20 [fosten]
 
-## 1.0.0 (2023-09-27)
+## [1.0.0] (2023-09-27)
 
 - Add release stack [fosten]
 - Add testing stack [fosten]
@@ -80,12 +80,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade 6.0.6/17.0.0-alpha.23 [fosten]
 - Add volto-baseball and plone-baseball [fosten]
 
-## 0.2.0 (2023-02-12)
+## [0.2.0] (2023-02-12)
 
 - Add matomo config [fosten]
 - ​​checksumBehavior: update, re-add theme [fosten]
 - Add volto-happy-theme [fosten]
 
-## 0.1.0 (2023-01-30)
+## [0.1.0] (2023-01-30)
 
 - Initial commit [fosten]
+
+[Unreleased]: https://github.com/Fosten/plone-happy-site/compare/2.1.0...main
+[2.1.0]: https://github.com/Fosten/plone-happy-site/releases/tag/2.1.0
+[2.0.0]: https://github.com/Fosten/plone-happy-site/releases/tag/2.0.0
+[1.2.0]: https://github.com/Fosten/plone-happy-site/releases/tag/1.2.0
+[1.1.0]: https://github.com/Fosten/plone-happy-site/releases/tag/1.1.0
+[1.0.0]: https://github.com/Fosten/plone-happy-site/releases/tag/1.0.0
+[0.2.0]: https://github.com/Fosten/plone-happy-site/releases/tag/0.2.0
+[0.1.0]: https://github.com/Fosten/plone-happy-site/releases/tag/0.1.0
+[fosten]: https://github.com/Fosten
