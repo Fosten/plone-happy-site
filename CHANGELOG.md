@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Bump node from 22 to 24 [fosten]
 - Add `.mxdev_cache` to .gitignore in backend addons [fosten]
 - Update pre-commit version and README.md [fosten]
 - Add footer links to CHANGELOG.md [fosten]

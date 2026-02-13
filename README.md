@@ -13,8 +13,8 @@ Plone 6 website for Happy Baseball
 
 Ensure you have the following installed:
 
-- Python 3.11 🐍
-- Node 22 🟩
+- Python 3.13 🐍
+- Node 24 🟩
 - Docker 🐳
 - nvm 🌟
 - pnpm 🧶
