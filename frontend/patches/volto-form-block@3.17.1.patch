@@ -1,0 +1,19 @@
+diff --git a/src/fieldSchema.js b/src/fieldSchema.js
+index a0cd490b36bb43a658c578d6a2af0c50679a1ae1..ff03a534e8839cb72e6df9062ee57ad273ccc963 100644
+--- a/src/fieldSchema.js
++++ b/src/fieldSchema.js
+@@ -79,7 +79,7 @@ const messages = defineMessages({
+ });
+ 
+ // eslint-disable-next-line import/no-anonymous-default-export
+-export default (props) => {
++const fieldSchema = (props) => {
+   var intl = useIntl();
+   const baseFieldTypeChoices = [
+     ['text', intl.formatMessage(messages.field_type_text)],
+@@ -174,3 +174,5 @@ export default (props) => {
+     ],
+   };
+ };
++
++export default fieldSchema;
