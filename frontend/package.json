@@ -33,19 +33,35 @@
     "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
   "dependencies": {
-    "@plone/volto": "workspace:*",
+    "@mbarde/volto-fullcalendar-block": "workspace:*",
     "@plone/registry": "workspace:*",
-    "volto-happy-site": "workspace:*",
-    "@mbarde/volto-fullcalendar-block": "workspace:*"
+    "@plone/volto": "workspace:*",
+    "volto-happy-site": "workspace:*"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"
   },
   "pnpm": {
     "overrides": {
-			"@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
-			"react-refresh": "^0.14.2"
+      "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+      "react-refresh": "^0.14.2"
+    },
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher"
+    ],
+    "onlyBuiltDependencies": [
+      "core-js",
+      "core-js-pure",
+      "cypress",
+      "es5-ext",
+      "esbuild",
+      "full-icu",
+      "lightningcss-cli",
+      "unrs-resolver"
+    ],
+    "patchedDependencies": {
+      "volto-form-block@3.17.1": "patches/volto-form-block@3.17.1.patch"
     }
   },
-  "packageManager": "pnpm@9.1.1"
+  "packageManager": "pnpm@10.20.0"
 }
