@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Add `.mxdev_cache` to .gitignore in backend addons [fosten]
 - Update pre-commit version and README.md [fosten]
 - Add footer links to CHANGELOG.md [fosten]
 - Move dependabot.yml to .github folder [fosten]
