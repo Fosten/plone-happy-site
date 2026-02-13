@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-
+- Bump Plone from 6.1.4 to 6.2.0a1 [fosten]
 
 ## [2.2.0] (2026-02-13)
 
