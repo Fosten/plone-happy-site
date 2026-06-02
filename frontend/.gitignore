@@ -9,7 +9,6 @@ build
 core
 node_modules
 results
-pnpm-lock.yaml
 /public
 /packages/volto-baseball/
 /packages/volto-byline/
