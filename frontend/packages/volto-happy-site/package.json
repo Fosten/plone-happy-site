@@ -42,7 +42,7 @@
     "@eeacms/volto-columns-block": "*",
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-slider-block": "*",
-    "@plone/volto-form-block": "*",
+    "@plone/volto-form-block": "1.0.0-alpha.0",
     "@plone-collective/volto-rss-provider": "*",
     "querystring-es3": "*",
     "@plone-collective/volto-authomatic": "3.0.0-alpha.1"
