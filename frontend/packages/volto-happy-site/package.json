@@ -32,7 +32,7 @@
     "@eeacms/volto-columns-block",
     "@eeacms/volto-matomo",
     "@kitconcept/volto-slider-block",
-    "volto-form-block",
+    "@plone/volto-form-block",
     "@plone-collective/volto-rss-provider",
     "@plone-collective/volto-authomatic"
   ],
@@ -42,7 +42,7 @@
     "@eeacms/volto-columns-block": "*",
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-slider-block": "*",
-    "volto-form-block": "*",
+    "@plone/volto-form-block": "*",
     "@plone-collective/volto-rss-provider": "*",
     "querystring-es3": "*",
     "@plone-collective/volto-authomatic": "3.0.0-alpha.1"

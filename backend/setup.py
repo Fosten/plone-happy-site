@@ -56,7 +56,7 @@ setup(
         "plone.restapi",
         "plone.volto",
         "plone.exportimport",
-        "collective.volto.formsupport[honeypot]",
+        "plone.formblock[honeypot]",
         "collective.honeypot",
         "collective.listmonk",
         "eea.banner",
