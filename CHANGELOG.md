@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Add collective.volto.otp [fosten]
 - Pin @plone/volto-form-block to 1.0.0-alpha.0 [fosten]
 - Replace @collective/volto-form-block, collective.volto.formsupport with @plone/volto-form-block, plone.formblock [fosten]
 - Remove pnpm-lock.yaml from .gitignore to resolve ButtonsWidget and AlignWidget snapshots mismatch in GHA [fosten]

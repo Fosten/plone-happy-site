@@ -58,6 +58,7 @@ setup(
         "plone.exportimport",
         "plone.formblock[honeypot]",
         "collective.honeypot",
+        "collective.volto.otp",
         "collective.listmonk",
         "eea.banner",
         "rss_provider",
